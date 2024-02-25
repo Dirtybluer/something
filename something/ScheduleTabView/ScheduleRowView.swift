@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct ScheduleRowView: View {
-    var item: ScheduleItem
+    var item: LessonItem
     
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
@@ -32,7 +32,7 @@ struct ScheduleRowView: View {
                     Text(item.name)
                         .font(.headline)
                         .fontWeight(.bold)
-                    Text(item.location)
+                    Text(item.meetingPoint ?? "Not Provided")
                         .font(.caption)
                 }
                 
@@ -52,7 +52,7 @@ struct ScheduleRowView: View {
                     HStack {
                         Image(systemName: "person.crop.rectangle.stack.fill")
                             .font(.caption)
-                        Text("\(item.numberOfCoach) Coaches")
+                        Text("\(item.listOfInstructors.count) Coaches")
                             .font(.caption)
                             .foregroundColor(.black)
                     }
@@ -69,6 +69,6 @@ struct ScheduleRowView: View {
 
 struct ScheduleRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ScheduleRowView(item: ScheduleItem(timeRange: "9:00 - 11:00", name: "Small - AM", numberOfParticipants: 5, numberOfCoach: 3, location: "Kids Room", imageName: "sun.min.fill"))
+        ScheduleRowView(item: exampleLessons[1])
     }
 }

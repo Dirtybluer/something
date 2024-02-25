@@ -10,9 +10,10 @@
 		4A2CF6962B88AB060076234D /* SchoolTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF6952B88AB060076234D /* SchoolTabView.swift */; };
 		4A2CF6982B88AC5F0076234D /* ScheduleTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF6972B88AC5F0076234D /* ScheduleTabView.swift */; };
 		4A2CF69C2B88B08F0076234D /* ScheduleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF69B2B88B08F0076234D /* ScheduleRowView.swift */; };
-		4A2CF69E2B88B0E80076234D /* ScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF69D2B88B0E80076234D /* ScheduleItem.swift */; };
 		4A2CF6A02B88B5AE0076234D /* ScheduleCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF69F2B88B5AE0076234D /* ScheduleCalendarView.swift */; };
 		4A2CF6A22B88BBC70076234D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF6A12B88BBC70076234D /* Utils.swift */; };
+		4A2CF6A42B8902870076234D /* ScheduleLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF6A32B8902870076234D /* ScheduleLessonView.swift */; };
+		4A2CF6AA2B8905380076234D /* DataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF6A92B8905380076234D /* DataStructures.swift */; };
 		C73614982B8701C70086372C /* somethingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73614972B8701C70086372C /* somethingApp.swift */; };
 		C736149A2B8701C70086372C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73614992B8701C70086372C /* ContentView.swift */; };
 		C736149C2B8701C80086372C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C736149B2B8701C80086372C /* Assets.xcassets */; };
@@ -43,9 +44,10 @@
 		4A2CF6952B88AB060076234D /* SchoolTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolTabView.swift; sourceTree = "<group>"; };
 		4A2CF6972B88AC5F0076234D /* ScheduleTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTabView.swift; sourceTree = "<group>"; };
 		4A2CF69B2B88B08F0076234D /* ScheduleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRowView.swift; sourceTree = "<group>"; };
-		4A2CF69D2B88B0E80076234D /* ScheduleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleItem.swift; sourceTree = "<group>"; };
 		4A2CF69F2B88B5AE0076234D /* ScheduleCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCalendarView.swift; sourceTree = "<group>"; };
 		4A2CF6A12B88BBC70076234D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4A2CF6A32B8902870076234D /* ScheduleLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleLessonView.swift; sourceTree = "<group>"; };
+		4A2CF6A92B8905380076234D /* DataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructures.swift; sourceTree = "<group>"; };
 		C73614942B8701C70086372C /* something.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = something.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73614972B8701C70086372C /* somethingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = somethingApp.swift; sourceTree = "<group>"; };
 		C73614992B8701C70086372C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,9 +98,10 @@
 			children = (
 				4A2CF6972B88AC5F0076234D /* ScheduleTabView.swift */,
 				4A2CF69B2B88B08F0076234D /* ScheduleRowView.swift */,
-				4A2CF69D2B88B0E80076234D /* ScheduleItem.swift */,
 				4A2CF69F2B88B5AE0076234D /* ScheduleCalendarView.swift */,
 				4A2CF6A12B88BBC70076234D /* Utils.swift */,
+				4A2CF6A32B8902870076234D /* ScheduleLessonView.swift */,
+				4A2CF6A92B8905380076234D /* DataStructures.swift */,
 			);
 			path = ScheduleTabView;
 			sourceTree = "<group>";
@@ -291,11 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A2CF6A42B8902870076234D /* ScheduleLessonView.swift in Sources */,
 				4A2CF6962B88AB060076234D /* SchoolTabView.swift in Sources */,
 				C736149A2B8701C70086372C /* ContentView.swift in Sources */,
 				C73614982B8701C70086372C /* somethingApp.swift in Sources */,
 				4A2CF6A02B88B5AE0076234D /* ScheduleCalendarView.swift in Sources */,
-				4A2CF69E2B88B0E80076234D /* ScheduleItem.swift in Sources */,
+				4A2CF6AA2B8905380076234D /* DataStructures.swift in Sources */,
 				4A2CF6982B88AC5F0076234D /* ScheduleTabView.swift in Sources */,
 				4A2CF69C2B88B08F0076234D /* ScheduleRowView.swift in Sources */,
 				4A2CF6A22B88BBC70076234D /* Utils.swift in Sources */,
