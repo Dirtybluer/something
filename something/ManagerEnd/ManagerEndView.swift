@@ -9,7 +9,7 @@ import SwiftUI
 
 import SwiftUI
 
-struct ContentView: View {
+struct ManagerEndView: View {
     private var resort = "Tomamu"
     
     // 数据模型，用于表示分类和子项
@@ -69,8 +69,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ManagerEndView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ManagerEndView()
     }
 }

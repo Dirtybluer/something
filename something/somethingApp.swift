@@ -12,7 +12,7 @@ struct somethingApp: App {
     var body: some Scene {
         WindowGroup {
             if UIDevice.current.userInterfaceIdiom == .pad {
-                ContentView()
+                ManagerEndView()
             } else {
                 CoachEndView()
             }
