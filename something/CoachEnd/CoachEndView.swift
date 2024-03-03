@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct CoachEndView: View {
     @State private var selectedTab = "Schedule"
 
     var body: some View {
@@ -31,8 +31,8 @@ struct ContentView: View {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
+struct CoachEndView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CoachEndView()
     }
 }

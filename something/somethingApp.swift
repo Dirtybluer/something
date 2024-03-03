@@ -11,7 +11,11 @@ import SwiftUI
 struct somethingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                ContentView()
+            } else {
+                CoachEndView()
+            }
         }
     }
 }

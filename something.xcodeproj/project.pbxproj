@@ -15,12 +15,13 @@
 		4A2CF6A42B8902870076234D /* ScheduleLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF6A32B8902870076234D /* ScheduleLessonView.swift */; };
 		4A2CF6AA2B8905380076234D /* DataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF6A92B8905380076234D /* DataStructures.swift */; };
 		C73614982B8701C70086372C /* somethingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73614972B8701C70086372C /* somethingApp.swift */; };
-		C736149A2B8701C70086372C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73614992B8701C70086372C /* ContentView.swift */; };
+		C736149A2B8701C70086372C /* CoachEndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73614992B8701C70086372C /* CoachEndView.swift */; };
 		C736149C2B8701C80086372C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C736149B2B8701C80086372C /* Assets.xcassets */; };
 		C736149F2B8701C80086372C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C736149E2B8701C80086372C /* Preview Assets.xcassets */; };
 		C73614A92B8701C80086372C /* somethingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73614A82B8701C80086372C /* somethingTests.swift */; };
 		C73614B32B8701C90086372C /* somethingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73614B22B8701C90086372C /* somethingUITests.swift */; };
 		C73614B52B8701C90086372C /* somethingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73614B42B8701C90086372C /* somethingUITestsLaunchTests.swift */; };
+		C7CA44A52B94C08F00B79ACA /* ManagerEndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA44A42B94C08F00B79ACA /* ManagerEndView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +51,7 @@
 		4A2CF6A92B8905380076234D /* DataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructures.swift; sourceTree = "<group>"; };
 		C73614942B8701C70086372C /* something.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = something.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73614972B8701C70086372C /* somethingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = somethingApp.swift; sourceTree = "<group>"; };
-		C73614992B8701C70086372C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C73614992B8701C70086372C /* CoachEndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachEndView.swift; sourceTree = "<group>"; };
 		C736149B2B8701C80086372C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C736149E2B8701C80086372C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C73614A42B8701C80086372C /* somethingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = somethingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +59,7 @@
 		C73614AE2B8701C90086372C /* somethingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = somethingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73614B22B8701C90086372C /* somethingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = somethingUITests.swift; sourceTree = "<group>"; };
 		C73614B42B8701C90086372C /* somethingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = somethingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C7CA44A42B94C08F00B79ACA /* ManagerEndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerEndView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,10 +131,9 @@
 		C73614962B8701C70086372C /* something */ = {
 			isa = PBXGroup;
 			children = (
-				4A2CF69A2B88ADB50076234D /* ScheduleTabView */,
-				4A2CF6992B88AD2E0076234D /* SchoolTabView */,
+				C7CA44A32B94C08100B79ACA /* ManagerEnd */,
+				C7CA44A22B94BFF400B79ACA /* CoachEnd */,
 				C73614972B8701C70086372C /* somethingApp.swift */,
-				C73614992B8701C70086372C /* ContentView.swift */,
 				C736149B2B8701C80086372C /* Assets.xcassets */,
 				C736149D2B8701C80086372C /* Preview Content */,
 			);
@@ -162,6 +163,24 @@
 				C73614B42B8701C90086372C /* somethingUITestsLaunchTests.swift */,
 			);
 			path = somethingUITests;
+			sourceTree = "<group>";
+		};
+		C7CA44A22B94BFF400B79ACA /* CoachEnd */ = {
+			isa = PBXGroup;
+			children = (
+				4A2CF69A2B88ADB50076234D /* ScheduleTabView */,
+				4A2CF6992B88AD2E0076234D /* SchoolTabView */,
+				C73614992B8701C70086372C /* CoachEndView.swift */,
+			);
+			path = CoachEnd;
+			sourceTree = "<group>";
+		};
+		C7CA44A32B94C08100B79ACA /* ManagerEnd */ = {
+			isa = PBXGroup;
+			children = (
+				C7CA44A42B94C08F00B79ACA /* ManagerEndView.swift */,
+			);
+			path = ManagerEnd;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,9 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7CA44A52B94C08F00B79ACA /* ManagerEndView.swift in Sources */,
 				4A2CF6A42B8902870076234D /* ScheduleLessonView.swift in Sources */,
 				4A2CF6962B88AB060076234D /* SchoolTabView.swift in Sources */,
-				C736149A2B8701C70086372C /* ContentView.swift in Sources */,
+				C736149A2B8701C70086372C /* CoachEndView.swift in Sources */,
 				C73614982B8701C70086372C /* somethingApp.swift in Sources */,
 				4A2CF6A02B88B5AE0076234D /* ScheduleCalendarView.swift in Sources */,
 				4A2CF6AA2B8905380076234D /* DataStructures.swift in Sources */,
