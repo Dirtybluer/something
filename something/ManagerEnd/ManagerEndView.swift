@@ -65,8 +65,6 @@ struct ContentView: View {
                 // 设置默认选中第一项
                 selectedCategory = categories.first
             }
-            
-            
         }
     }
 }

@@ -22,6 +22,7 @@
 		C73614B32B8701C90086372C /* somethingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73614B22B8701C90086372C /* somethingUITests.swift */; };
 		C73614B52B8701C90086372C /* somethingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73614B42B8701C90086372C /* somethingUITestsLaunchTests.swift */; };
 		C7CA44A52B94C08F00B79ACA /* ManagerEndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA44A42B94C08F00B79ACA /* ManagerEndView.swift */; };
+		C7CA44A72B94D0EA00B79ACA /* LessonPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA44A62B94D0EA00B79ACA /* LessonPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		C73614B22B8701C90086372C /* somethingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = somethingUITests.swift; sourceTree = "<group>"; };
 		C73614B42B8701C90086372C /* somethingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = somethingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C7CA44A42B94C08F00B79ACA /* ManagerEndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerEndView.swift; sourceTree = "<group>"; };
+		C7CA44A62B94D0EA00B79ACA /* LessonPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				4A2CF6952B88AB060076234D /* SchoolTabView.swift */,
+				C7CA44A62B94D0EA00B79ACA /* LessonPickerView.swift */,
 			);
 			path = SchoolTabView;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			files = (
 				C7CA44A52B94C08F00B79ACA /* ManagerEndView.swift in Sources */,
 				4A2CF6A42B8902870076234D /* ScheduleLessonView.swift in Sources */,
+				C7CA44A72B94D0EA00B79ACA /* LessonPickerView.swift in Sources */,
 				4A2CF6962B88AB060076234D /* SchoolTabView.swift in Sources */,
 				C736149A2B8701C70086372C /* CoachEndView.swift in Sources */,
 				C73614982B8701C70086372C /* somethingApp.swift in Sources */,
