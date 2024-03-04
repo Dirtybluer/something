@@ -1,0 +1,27 @@
+﻿name,shortName,describe,discipline,guestType,requiredCertificate,startTime,endTime,meetingPoint
+Club 6,C6,-,Ski,-,Lv3,09:00,11:30,Adult Departure
+Club 5,C5,-,Ski,-,Lv3,09:00,11:30,Adult Departure
+Club 4,C4,-,Ski,-,Lv2,09:15,11:30,Adult Departure
+Club 3,C3,-,Ski,-,Lv1,09:30,11:45,Adult Departure
+Club 2,C2,-,Ski,-,Lv1,09:45,11:45,Adult Departure
+Club 1,C1,-,Ski,-,Lv1,10:00,12:00,Adult Departure
+Club Beginner,CB,-,Ski,-,Lv1,10:15,12:15,Adult Departure
+SB 4,SB4,-,SB,-,Lv2,09:45,12:00,Adult Departure
+SB 3,SB3,-,SB,-,Lv2,09:45,12:00,Adult Departure
+SB 2,SB2,-,SB,-,Lv1,10:00,12:00,Adult Departure
+SB 1,SB1,-,SB,-,Lv1,10:15,12:15,Adult Departure
+SB Beginner,SBB,-,SB,-,Lv1,10:15,12:15,Adult Departure
+Trident Gold,TG,-,Ski,-,Lv3,09:00,11:15,Big Kids Room
+Trident Bronze,TB,-,Ski,-,Lv2,09:00,11:15,Big Kids Room
+Trident 3,T3,-,Ski,-,Lv2,09:00,11:15,Big Kids Room
+Trident 2,T2,-,Ski,-,Lv1,09:15,11:30,Big Kids Room
+Trident 1,T1,-,Ski,-,Lv1,09:30,11:30,Big Kids Room
+Dragon,Dragon,-,Ski,-,Lv1,09:30,11:30,Small Kids Room
+Tiger,Tiger,-,Ski,-,Lv1,09:45,11:45,Small Kids Room
+Panda,Panda,-,Ski,-,Lv1,10:00,11:30,Small Kids Room
+Rider 3,R3,-,SB,-,Lv2,09:00,11:15,Big Kids Room
+Rider 2,R2,-,SB,-,Lv1,09:00,11:15,Big Kids Room
+Rider 1,R1,-,SB,-,Lv1,09:00,11:00,Small Kids Room
+Rider ,Rider,-,SB,-,Lv1,09:00,11:00,Small Kids Room
+Teens,Teens,-,Teens,-,Lv2,09:15,11:30,Big Kids Room
+Stand By,S/B,-,S/B,-,Lv1,08:30,12:00,Instructor Locker Room

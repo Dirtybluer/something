@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23D60" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Duty" representedClassName=".Duty" parentEntity="TemplateItem" syncable="YES">
+        <attribute name="describe" optional="YES" attributeType="String"/>
+        <attribute name="endTime" optional="YES" attributeType="String"/>
+        <attribute name="meetingPoint" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="shortName" optional="YES" attributeType="String"/>
+        <attribute name="startTime" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="GroupLesson" representedClassName=".GroupLesson" parentEntity="TemplateItem" syncable="YES">
+        <attribute name="describe" optional="YES" attributeType="String"/>
+        <attribute name="discipline" optional="YES" attributeType="String"/>
+        <attribute name="endTime" optional="YES" attributeType="String"/>
+        <attribute name="guestType" optional="YES" attributeType="String"/>
+        <attribute name="meetingPoint" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="requiredCertificate" optional="YES" attributeType="String"/>
+        <attribute name="shortName" optional="YES" attributeType="String"/>
+        <attribute name="startTime" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Instructor" representedClassName=".GroupLesson" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="residence" optional="YES" attributeType="String"/>
+        <attribute name="sbLevel" optional="YES" attributeType="String"/>
+        <attribute name="skiLevel" optional="YES" attributeType="String"/>
+        <attribute name="skiName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Other" representedClassName=".Other" parentEntity="TemplateItem" syncable="YES">
+        <attribute name="describe" optional="YES" attributeType="String"/>
+        <attribute name="endTime" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="shortName" optional="YES" attributeType="String"/>
+        <attribute name="startTime" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="PrivateLesson" representedClassName=".PrivateLesson" parentEntity="TemplateItem" syncable="YES">
+        <attribute name="describe" optional="YES" attributeType="String"/>
+        <attribute name="discipline" optional="YES" attributeType="String"/>
+        <attribute name="endTime" optional="YES" attributeType="String"/>
+        <attribute name="guestInfo" optional="YES" attributeType="String" customClassName="[String]"/>
+        <attribute name="level" optional="YES" attributeType="String"/>
+        <attribute name="locker" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="roomNumber" optional="YES" attributeType="String"/>
+        <attribute name="shortName" optional="YES" attributeType="String"/>
+        <attribute name="startTime" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ScheduleItem" representedClassName=".ScheduleItem" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="endTime" optional="YES" attributeType="String"/>
+        <attribute name="gmeCreate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="gmtModify" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="instructorNum" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="meetingPoint" optional="YES" attributeType="String"/>
+        <attribute name="scheduleDescribe" optional="YES" attributeType="String"/>
+        <attribute name="scheduleItemID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="scheduleName" optional="YES" attributeType="String"/>
+        <attribute name="scheduleType" optional="YES" attributeType="String"/>
+        <attribute name="signUpNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="String"/>
+        <relationship name="instructors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Instructor"/>
+        <relationship name="scheduleItemTemplate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TemplateItem" inverseName="scheduleItem" inverseEntity="TemplateItem"/>
+    </entity>
+    <entity name="Service" representedClassName=".Service" parentEntity="TemplateItem" syncable="YES">
+        <attribute name="department" optional="YES" attributeType="String"/>
+        <attribute name="describe" optional="YES" attributeType="String"/>
+        <attribute name="endTime" optional="YES" attributeType="String"/>
+        <attribute name="meetingPoint" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="shortName" optional="YES" attributeType="String"/>
+        <attribute name="startTime" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TemplateItem" representedClassName=".TemplateItem" syncable="YES">
+        <attribute name="templateID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="scheduleItem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ScheduleItem" inverseName="scheduleItemTemplate" inverseEntity="ScheduleItem"/>
+    </entity>
+</model>

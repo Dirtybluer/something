@@ -1,0 +1,160 @@
+﻿scheduleName,scheduleDescribe,meetingPoint,date,startTime,endTime,scheduleType,scheduleTemplateID,signUpNum,Instructors,gmtCreate,gmtModify,InstructotrNum
+Club 6,-,Adult Departure,9-Jan-24,09:00,11:30,group lesson,-,0,KAYA,-,-,1
+Club 5,-,Adult Departure,9-Jan-24,09:00,11:30,group lesson,-,0,WILLIE,-,-,1
+Club 5,-,Adult Departure,9-Jan-24,09:00,11:30,group lesson,-,0,CHARLIE,-,-,1
+Club 4,-,Adult Departure,9-Jan-24,09:15,11:30,group lesson,-,0,GREG,-,-,1
+Club 4,-,Adult Departure,9-Jan-24,09:15,11:30,group lesson,-,0,GERT,-,-,1
+Club 4,-,Adult Departure,9-Jan-24,09:15,11:30,group lesson,-,0,RADU,-,-,1
+Club 3,-,Adult Departure,9-Jan-24,09:30,11:45,group lesson,-,0,DYLAN,-,-,1
+Club 3,-,Adult Departure,9-Jan-24,09:30,11:45,group lesson,-,0,BEN S,-,-,1
+Club 3,-,Adult Departure,9-Jan-24,09:30,11:45,group lesson,-,0,GUS,-,-,1
+Club 3,-,Adult Departure,9-Jan-24,09:30,11:45,group lesson,-,0,BOJAN,-,-,1
+Club 2,-,Adult Departure,9-Jan-24,09:45,11:45,group lesson,-,0,LILY,-,-,1
+Club 2,-,Adult Departure,9-Jan-24,09:45,11:45,group lesson,-,0,BENJAMIN,-,-,1
+Club 1,-,Adult Departure,9-Jan-24,10:00,12:00,group lesson,-,0,KALEB,-,-,1
+Club 1,-,Adult Departure,9-Jan-24,10:00,12:00,group lesson,-,0,EMIL,-,-,1
+Club 1,-,Adult Departure,9-Jan-24,10:00,12:00,group lesson,-,0,MADS,-,-,1
+Club 1,-,Adult Departure,9-Jan-24,10:00,12:00,group lesson,-,0,WANG,-,-,1
+Club Beginner,-,Adult Departure,9-Jan-24,10:15,12:15,group lesson,-,0,KEVIN,-,-,1
+Club Beginner,-,Adult Departure,9-Jan-24,10:15,12:15,group lesson,-,0,YOSSY,-,-,1
+Club Beginner,-,Adult Departure,9-Jan-24,10:15,12:15,group lesson,-,0,ADAM,-,-,1
+SB 4,-,Adult Departure,9-Jan-24,09:45,12:00,group lesson,-,0,NICOLAS,-,-,1
+SB 3,-,Adult Departure,9-Jan-24,09:45,12:00,group lesson,-,0,ELENA,-,-,1
+SB 3,-,Adult Departure,9-Jan-24,09:45,12:00,group lesson,-,0,LISA,-,-,1
+SB 2,-,Adult Departure,9-Jan-24,10:00,12:00,group lesson,-,0,ASKE,-,-,1
+SB 1,-,Adult Departure,9-Jan-24,10:15,12:15,group lesson,-,0,DAVE,-,-,1
+SB 1,-,Adult Departure,9-Jan-24,10:15,12:15,group lesson,-,0,TOBY,-,-,1
+SB Beginner,-,Adult Departure,9-Jan-24,10:15,12:15,group lesson,-,0,WILLYS,-,-,1
+Trident Bronze,-,Big Kids Room,9-Jan-24,09:00,11:15,group lesson,-,0,CAROLINE,-,-,1
+Trident 3,-,Big Kids Room,9-Jan-24,09:00,11:15,group lesson,-,0,SAM,-,-,1
+Trident 3,-,Big Kids Room,9-Jan-24,09:00,11:15,group lesson,-,0,TYLER,-,-,1
+Trident 3,-,Big Kids Room,9-Jan-24,09:00,11:15,group lesson,-,0,SOFIE,-,-,1
+Trident 2,-,Big Kids Room,9-Jan-24,09:15,11:30,group lesson,-,0,ALEX,-,-,1
+Trident 2,-,Big Kids Room,9-Jan-24,09:15,11:30,group lesson,-,0,JULIE,-,-,1
+Trident 2,-,Big Kids Room,9-Jan-24,09:15,11:30,group lesson,-,0,VICKY,-,-,1
+Trident 2,-,Big Kids Room,9-Jan-24,09:15,11:30,group lesson,-,0,JAMIE,-,-,1
+Trident 1,-,Big Kids Room,9-Jan-24,09:30,11:30,group lesson,-,0,AMY,-,-,1
+Trident 1,-,Big Kids Room,9-Jan-24,09:30,11:30,group lesson,-,0,TAN,-,-,1
+Dragon,-,Small Kids Room,9-Jan-24,09:30,11:30,group lesson,-,0,JULIEANE,-,-,1
+Dragon,-,Small Kids Room,9-Jan-24,09:30,11:30,group lesson,-,0,ASGER M,-,-,1
+Dragon,-,Small Kids Room,9-Jan-24,09:30,11:30,group lesson,-,0,ANTON,-,-,1
+Dragon,-,Small Kids Room,9-Jan-24,09:30,11:30,group lesson,-,0,RASMUS,-,-,1
+Tiger,-,Small Kids Room,9-Jan-24,09:45,11:45,group lesson,-,0,NINO,-,-,1
+Tiger,-,Small Kids Room,9-Jan-24,09:45,11:45,group lesson,-,0,MATHIJS,-,-,1
+Tiger,-,Small Kids Room,9-Jan-24,09:45,11:45,group lesson,-,0,KEIRAN,-,-,1
+Tiger,-,Small Kids Room,9-Jan-24,09:45,11:45,group lesson,-,0,ASGER,-,-,1
+Tiger,-,Small Kids Room,9-Jan-24,09:45,11:45,group lesson,-,0,JONAS,-,-,1
+Tiger,-,Small Kids Room,9-Jan-24,09:45,11:45,group lesson,-,0,ALFRED,-,-,1
+Tiger,-,Small Kids Room,9-Jan-24,09:45,11:45,group lesson,-,0,LUCAS,-,-,1
+Panda,-,Small Kids Room,9-Jan-24,10:00,11:30,group lesson,-,0,SALLY,-,-,1
+Panda,-,Small Kids Room,9-Jan-24,10:00,11:30,group lesson,-,0,KYOKO,-,-,1
+Rider 2,-,Big Kids Room,9-Jan-24,09:00,11:15,group lesson,-,0,MAGS,-,-,1
+Rider 1,-,Small Kids Room,9-Jan-24,09:00,11:00,group lesson,-,0,GEORGE,-,-,1
+Rider ,-,Small Kids Room,9-Jan-24,09:00,11:00,group lesson,-,0,DENVER,-,-,1
+Club 6,-,Adult Departure,10-Jan-24,09:00,11:30,group lesson,-,0,ALEX,-,-,1
+Club 6,-,Adult Departure,10-Jan-24,09:00,11:30,group lesson,-,0,GREG,-,-,1
+Club 5,-,Adult Departure,10-Jan-24,09:00,11:30,group lesson,-,0,BOJAN,-,-,1
+Club 5,-,Adult Departure,10-Jan-24,09:00,11:30,group lesson,-,0,CHARLIE,-,-,1
+Club 4,-,Adult Departure,10-Jan-24,09:15,11:30,group lesson,-,0,DYLAN,-,-,1
+Club 4,-,Adult Departure,10-Jan-24,09:15,11:30,group lesson,-,0,VICTOR,-,-,1
+Club 4,-,Adult Departure,10-Jan-24,09:15,11:30,group lesson,-,0,GERT,-,-,1
+Club 3,-,Adult Departure,10-Jan-24,09:30,11:45,group lesson,-,0,RADU,-,-,1
+Club 3,-,Adult Departure,10-Jan-24,09:30,11:45,group lesson,-,0,KEIRAN,-,-,1
+Club 2,-,Adult Departure,10-Jan-24,09:45,11:45,group lesson,-,0,ASGER,-,-,1
+Club 2,-,Adult Departure,10-Jan-24,09:45,11:45,group lesson,-,0,EMIL,-,-,1
+Club 2,-,Adult Departure,10-Jan-24,09:45,11:45,group lesson,-,0,YOSSY,-,-,1
+Club 2,-,Adult Departure,10-Jan-24,09:45,11:45,group lesson,-,0,WANG,-,-,1
+Club 1,-,Adult Departure,10-Jan-24,10:00,12:00,group lesson,-,0,BENJAMIN,-,-,1
+Club 1,-,Adult Departure,10-Jan-24,10:00,12:00,group lesson,-,0,KEVIN,-,-,1
+Club Beginner,-,Adult Departure,10-Jan-24,10:15,12:15,group lesson,-,0,TAN,-,-,1
+Club Beginner,-,Adult Departure,10-Jan-24,10:15,12:15,group lesson,-,0,ADAM,-,-,1
+Club Beginner,-,Adult Departure,10-Jan-24,10:15,12:15,group lesson,-,0,HIDE,-,-,1
+SB 4,-,Adult Departure,10-Jan-24,09:45,12:00,group lesson,-,0,WILLYS,-,-,1
+SB 3,-,Adult Departure,10-Jan-24,09:45,12:00,group lesson,-,0,NICOLAS,-,-,1
+SB 3,-,Adult Departure,10-Jan-24,09:45,12:00,group lesson,-,0,LISA,-,-,1
+SB 2,-,Adult Departure,10-Jan-24,10:00,12:00,group lesson,-,0,DAVE,-,-,1
+SB 2,-,Adult Departure,10-Jan-24,10:00,12:00,group lesson,-,0,ASKE,-,-,1
+SB 1,-,Adult Departure,10-Jan-24,10:15,12:15,group lesson,-,0,MAGS,-,-,1
+SB Beginner,-,Adult Departure,10-Jan-24,10:15,12:15,group lesson,-,0,ELENA,-,-,1
+SB Beginner,-,Adult Departure,10-Jan-24,10:15,12:15,group lesson,-,0,DENVER,-,-,1
+Trident Bronze,-,Big Kids Room,10-Jan-24,09:00,11:15,group lesson,-,0,GUY,-,-,1
+Trident 3,-,Big Kids Room,10-Jan-24,09:00,11:15,group lesson,-,0,WILLIAM,-,-,1
+Trident 3,-,Big Kids Room,10-Jan-24,09:00,11:15,group lesson,-,0,TYLER,-,-,1
+Trident 2,-,Big Kids Room,10-Jan-24,09:15,11:30,group lesson,-,0,AMY,-,-,1
+Trident 2,-,Big Kids Room,10-Jan-24,09:15,11:30,group lesson,-,0,KALEB,-,-,1
+Trident 2,-,Big Kids Room,10-Jan-24,09:15,11:30,group lesson,-,0,OLLY,-,-,1
+Trident 2,-,Big Kids Room,10-Jan-24,09:15,11:30,group lesson,-,0,RILEY,-,-,1
+Trident 1,-,Big Kids Room,10-Jan-24,09:30,11:30,group lesson,-,0,ASGER M,-,-,1
+Trident 1,-,Big Kids Room,10-Jan-24,09:30,11:30,group lesson,-,0,MATHIJS,-,-,1
+Trident 1,-,Big Kids Room,10-Jan-24,09:30,11:30,group lesson,-,0,KYOKO,-,-,1
+Trident 1,-,Big Kids Room,10-Jan-24,09:30,11:30,group lesson,-,0,TOBY,-,-,1
+Dragon,-,Small Kids Room,10-Jan-24,09:30,11:30,group lesson,-,0,JULIEANE,-,-,1
+Dragon,-,Small Kids Room,10-Jan-24,09:30,11:30,group lesson,-,0,ROMO,-,-,1
+Dragon,-,Small Kids Room,10-Jan-24,09:30,11:30,group lesson,-,0,ALFRED,-,-,1
+Dragon,-,Small Kids Room,10-Jan-24,09:30,11:30,group lesson,-,0,LUCAS,-,-,1
+Dragon,-,Small Kids Room,10-Jan-24,09:30,11:30,group lesson,-,0,MADS,-,-,1
+Dragon,-,Small Kids Room,10-Jan-24,09:30,11:30,group lesson,-,0,JONAS,-,-,1
+Dragon,-,Small Kids Room,10-Jan-24,09:30,11:30,group lesson,-,0,ANTON,-,-,1
+Tiger,-,Small Kids Room,10-Jan-24,09:45,11:45,group lesson,-,0,NINO,-,-,1
+Tiger,-,Small Kids Room,10-Jan-24,09:45,11:45,group lesson,-,0,FACU,-,-,1
+Tiger,-,Small Kids Room,10-Jan-24,09:45,11:45,group lesson,-,0,TEDDY,-,-,1
+Tiger,-,Small Kids Room,10-Jan-24,09:45,11:45,group lesson,-,0,DENVER I,-,-,1
+Tiger,-,Small Kids Room,10-Jan-24,09:45,11:45,group lesson,-,0,HANNA,-,-,1
+Tiger,-,Small Kids Room,10-Jan-24,09:45,11:45,group lesson,-,0,RASMUS,-,-,1
+Panda,-,Small Kids Room,10-Jan-24,10:00,11:30,group lesson,-,0,NAOMI,-,-,1
+Panda,-,Small Kids Room,10-Jan-24,10:00,11:30,group lesson,-,0,MAGNUS,-,-,1
+Rider 2,-,Big Kids Room,10-Jan-24,09:00,11:15,group lesson,-,0,GEORGE,-,-,1
+Rider 1,-,Small Kids Room,10-Jan-24,09:00,11:00,group lesson,-,0,JAKE,-,-,1
+Rider ,-,Small Kids Room,10-Jan-24,09:00,11:00,group lesson,-,0,BEN,-,-,1
+Club 6,-,Adult Departure,11-Jan-24,09:00,11:30,group lesson,-,0,JOVAN,-,-,1
+Club 6,-,Adult Departure,11-Jan-24,09:00,11:30,group lesson,-,0,GREG,-,-,1
+Club 5,-,Adult Departure,11-Jan-24,09:00,11:30,group lesson,-,0,CHARLIE,-,-,1
+Club 5,-,Adult Departure,11-Jan-24,09:00,11:30,group lesson,-,0,SAM,-,-,1
+Club 4,-,Adult Departure,11-Jan-24,09:15,11:30,group lesson,-,0,VICTOR,-,-,1
+Club 4,-,Adult Departure,11-Jan-24,09:15,11:30,group lesson,-,0,WILLIE,-,-,1
+Club 3,-,Adult Departure,11-Jan-24,09:30,11:45,group lesson,-,0,ASGER,-,-,1
+Club 3,-,Adult Departure,11-Jan-24,09:30,11:45,group lesson,-,0,GUS,-,-,1
+Club 3,-,Adult Departure,11-Jan-24,09:30,11:45,group lesson,-,0,DENVER I,-,-,1
+Club 2,-,Adult Departure,11-Jan-24,09:45,11:45,group lesson,-,0,TAN,-,-,1
+Club 2,-,Adult Departure,11-Jan-24,09:45,11:45,group lesson,-,0,KEVIN,-,-,1
+Club 2,-,Adult Departure,11-Jan-24,09:45,11:45,group lesson,-,0,EMIL,-,-,1
+Club 1,-,Adult Departure,11-Jan-24,10:00,12:00,group lesson,-,0,TYLER,-,-,1
+Club 1,-,Adult Departure,11-Jan-24,10:00,12:00,group lesson,-,0,HIE,-,-,1
+Club 1,-,Adult Departure,11-Jan-24,10:00,12:00,group lesson,-,0,DENVER,-,-,1
+Club Beginner,-,Adult Departure,11-Jan-24,10:15,12:15,group lesson,-,0,BENJAMIN,-,-,1
+Club Beginner,-,Adult Departure,11-Jan-24,10:15,12:15,group lesson,-,0,ADAM,-,-,1
+Club Beginner,-,Adult Departure,11-Jan-24,10:15,12:15,group lesson,-,0,YOSSY,-,-,1
+SB 4,-,Adult Departure,11-Jan-24,09:45,12:00,group lesson,-,0,LEGO,-,-,1
+SB 3,-,Adult Departure,11-Jan-24,09:45,12:00,group lesson,-,0,ELENA,-,-,1
+SB 3,-,Adult Departure,11-Jan-24,09:45,12:00,group lesson,-,0,LISA,-,-,1
+SB 2,-,Adult Departure,11-Jan-24,10:00,12:00,group lesson,-,0,WILLYS,-,-,1
+SB 2,-,Adult Departure,11-Jan-24,10:00,12:00,group lesson,-,0,ASKE,-,-,1
+SB 1,-,Adult Departure,11-Jan-24,10:15,12:15,group lesson,-,0,DAVE,-,-,1
+SB Beginner,-,Adult Departure,11-Jan-24,10:15,12:15,group lesson,-,0,MAGS,-,-,1
+Trident Bronze,-,Big Kids Room,11-Jan-24,09:00,11:15,group lesson,-,0,SOFIE,-,-,1
+Trident 3,-,Big Kids Room,11-Jan-24,09:00,11:15,group lesson,-,0,JONAS,-,-,1
+Trident 3,-,Big Kids Room,11-Jan-24,09:00,11:15,group lesson,-,0,TEDDY,-,-,1
+Trident 2,-,Big Kids Room,11-Jan-24,09:15,11:30,group lesson,-,0,JULIEANE,-,-,1
+Trident 2,-,Big Kids Room,11-Jan-24,09:15,11:30,group lesson,-,0,ROMO,-,-,1
+Trident 2,-,Big Kids Room,11-Jan-24,09:15,11:30,group lesson,-,0,FACU,-,-,1
+Trident 2,-,Big Kids Room,11-Jan-24,09:15,11:30,group lesson,-,0,BEN S,-,-,1
+Trident 1,-,Big Kids Room,11-Jan-24,09:30,11:30,group lesson,-,0,LUCAS,-,-,1
+Trident 1,-,Big Kids Room,11-Jan-24,09:30,11:30,group lesson,-,0,OLLY,-,-,1
+Trident 1,-,Big Kids Room,11-Jan-24,09:30,11:30,group lesson,-,0,ANTON,-,-,1
+Trident 1,-,Big Kids Room,11-Jan-24,09:30,11:30,group lesson,-,0,ALFRED,-,-,1
+Trident 1,-,Big Kids Room,11-Jan-24,09:30,11:30,group lesson,-,0,LILY,-,-,1
+Dragon,-,Small Kids Room,11-Jan-24,09:30,11:30,group lesson,-,0,VICKY,-,-,1
+Dragon,-,Small Kids Room,11-Jan-24,09:30,11:30,group lesson,-,0,KYOKO,-,-,1
+Dragon,-,Small Kids Room,11-Jan-24,09:30,11:30,group lesson,-,0,TRASMUS,-,-,1
+Dragon,-,Small Kids Room,11-Jan-24,09:30,11:30,group lesson,-,0,SALLY,-,-,1
+Dragon,-,Small Kids Room,11-Jan-24,09:30,11:30,group lesson,-,0,NAOMI,-,-,1
+Tiger,-,Small Kids Room,11-Jan-24,09:45,11:45,group lesson,-,0,AMY,-,-,1
+Tiger,-,Small Kids Room,11-Jan-24,09:45,11:45,group lesson,-,0,MATHIJS,-,-,1
+Tiger,-,Small Kids Room,11-Jan-24,09:45,11:45,group lesson,-,0,MAGNUS,-,-,1
+Tiger,-,Small Kids Room,11-Jan-24,09:45,11:45,group lesson,-,0,WILLIAM,-,-,1
+Tiger,-,Small Kids Room,11-Jan-24,09:45,11:45,group lesson,-,0,MADS,-,-,1
+Panda,-,Small Kids Room,11-Jan-24,10:00,11:30,group lesson,-,0,BOJAN,-,-,1
+Panda,-,Small Kids Room,11-Jan-24,10:00,11:30,group lesson,-,0,KAYA,-,-,1
+Rider 2,-,Big Kids Room,11-Jan-24,09:00,11:15,group lesson,-,0,RADU,-,-,1
+Rider 1,-,Small Kids Room,11-Jan-24,09:00,11:00,group lesson,-,0,BEN,-,-,1
+Rider ,-,Small Kids Room,11-Jan-24,09:00,11:00,group lesson,-,0,GEORGE,-,-,1

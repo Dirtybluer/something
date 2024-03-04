@@ -47,7 +47,10 @@ struct ScheduleTabView: View {
                 
                 List {
                     ForEach(exampleLessons) { item in
-                        NavigationLink(destination: ScheduleLessonView(viewingInstructorName: viewingInstructorName, lesson: item)) {
+                        ZStack(alignment: .center) {
+                            NavigationLink(destination: ScheduleItemDetailedView(viewingInstructorName: viewingInstructorName, scheduleItem: item)) {
+                                EmptyView()
+                            }
                             ScheduleRowView(item: item)
                         }
                     }

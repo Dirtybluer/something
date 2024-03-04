@@ -8,16 +8,16 @@
 import Foundation
 import SwiftUI
 
-struct ScheduleLessonView: View {
+struct ScheduleItemDetailedView: View {
     var viewingInstructorName: String
-    var lesson: LessonItem
+    var scheduleItem: LessonItem
     var body: some View {
         ScrollView {
             ZStack {
                 Circle()
-                    .fill(lesson.color)
+                    .fill(scheduleItem.color)
                     .frame(width:150, height: 150)
-                Text(lesson.emoji)
+                Text(scheduleItem.emoji)
                     .font(.system(size: 80))
             }
             .padding(.top)
@@ -25,10 +25,10 @@ struct ScheduleLessonView: View {
                 Section (header: Text("Summary")) {
                     HStack{
                         Spacer()
-                        Text(String(lesson.numberOfParticipants))
+                        Text(String(scheduleItem.numberOfParticipants))
                             .font(.system(size: 50))
                         Text("Kids,")
-                        Text(String(lesson.listOfInstructors.count))
+                        Text(String(scheduleItem.listOfInstructors.count))
                             .font(.system(size: 50))
                         Text("Instructors")
                         Spacer()
@@ -41,7 +41,7 @@ struct ScheduleLessonView: View {
                 Section (header: Text("Instructors")) {
                     HStack {
                         List {
-                            ForEach(lesson.listOfInstructors) { item in
+                            ForEach(scheduleItem.listOfInstructors) { item in
                                 InstructorProfile(color: item.color, name: item.name)
                             }
                         }
@@ -82,6 +82,6 @@ struct InstructorProfile: View {
 
 struct ScheduleLessonView_Previews: PreviewProvider {
     static var previews: some View {
-        ScheduleLessonView(viewingInstructorName: "Sammy", lesson: exampleLessons[0])
+        ScheduleItemDetailedView(viewingInstructorName: "Sammy", scheduleItem: exampleLessons[0])
     }
 }
