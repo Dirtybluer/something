@@ -27,7 +27,12 @@ class CoreDataStack: ObservableObject {
         for resourceName in resoureNames {
             if let numOfRows = resourceCSVData.getData()[resourceName]?.count {
                 for rowNumber in 1..<numOfRows {
-                    
+                    if resourceName == "LessonGroup" {
+                        
+                    }
+                    else if resourceName == "ScheduleItem" {
+                        
+                    }
                 }
             }
         }
