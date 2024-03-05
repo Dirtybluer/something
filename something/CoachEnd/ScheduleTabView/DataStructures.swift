@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct ScheduleItem: Identifiable {
+struct ScheduleItemFake: Identifiable {
     let id = UUID()
     let timeRange: String
     let name: String
