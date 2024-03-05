@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23D60" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23D60" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
     <entity name="Duty" representedClassName=".Duty" parentEntity="TemplateItem" syncable="YES">
         <attribute name="describe" optional="YES" attributeType="String"/>
         <attribute name="endTime" optional="YES" attributeType="String"/>
@@ -19,12 +19,13 @@
         <attribute name="shortName" optional="YES" attributeType="String"/>
         <attribute name="startTime" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="Instructor" representedClassName=".GroupLesson" syncable="YES">
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    <entity name="Instructor" representedClassName=".Instructor" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="residence" optional="YES" attributeType="String"/>
         <attribute name="sbLevel" optional="YES" attributeType="String"/>
         <attribute name="skiLevel" optional="YES" attributeType="String"/>
+        <attribute name="skill" optional="YES" attributeType="String"/>
         <attribute name="skiName" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Other" representedClassName=".Other" parentEntity="TemplateItem" syncable="YES">
@@ -49,7 +50,7 @@
     <entity name="ScheduleItem" representedClassName=".ScheduleItem" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="endTime" optional="YES" attributeType="String"/>
-        <attribute name="gmeCreate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="gmtCreate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="gmtModify" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="instructorNum" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="meetingPoint" optional="YES" attributeType="String"/>
@@ -72,7 +73,7 @@
         <attribute name="startTime" optional="YES" attributeType="String"/>
     </entity>
     <entity name="TemplateItem" representedClassName=".TemplateItem" syncable="YES">
-        <attribute name="templateID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="templateID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="scheduleItem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ScheduleItem" inverseName="scheduleItemTemplate" inverseEntity="ScheduleItem"/>
     </entity>
 </model>

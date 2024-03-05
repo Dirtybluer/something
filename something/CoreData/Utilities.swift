@@ -1,5 +1,5 @@
 //
-//  CSVData.swift
+//  Utilities.swift
 //  something
 //
 //  Created by 张萌琦 on 2024/3/5.
@@ -25,18 +25,29 @@ class CSVData {
                 let content = try String(contentsOfFile: pathToCSV).replacingOccurrences(of: "\r", with: "")
                 let parsedCSV: [[String]] = content.components(separatedBy: "\n")
                     .map{ $0.components(separatedBy: ",") }
-                print("Successfully parsed \(pathToCSV), length: \(parsedCSV.count)")
+                print("Successfully parsed: \(pathToCSV), length: \(parsedCSV.count)")
                 self.data[resourceName] = parsedCSV
             }
             catch {
-                print("Failed parsing (\(resourceName).\(resourceType)):\n \(error)")
+                print("Failed parsing: (\(resourceName).\(resourceType)):\n \(error)")
                 self.data[resourceName] = []
             }
         }
-        print(self.data["LessonGroup"]![1])
     }
     
     func getData() -> [String: [[String]]] {
         return self.data
     }
+}
+
+func generateDateFromString(dateString: String) -> Date? {
+    var resultDate: Date? = nil
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "d-MMM-yy"
+    if let date = dateFormatter.date(from: dateString) {
+        resultDate = date
+    } else {
+        print("The string cannot be converted to a date.")
+    }
+    return resultDate
 }

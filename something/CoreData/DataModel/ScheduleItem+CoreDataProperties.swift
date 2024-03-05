@@ -18,7 +18,7 @@ extension ScheduleItem {
 
     @NSManaged public var date: Date?
     @NSManaged public var endTime: String?
-    @NSManaged public var gmeCreate: Date?
+    @NSManaged public var gmtCreate: Date?
     @NSManaged public var gmtModify: Date?
     @NSManaged public var instructorNum: Int64
     @NSManaged public var meetingPoint: String?
@@ -37,10 +37,10 @@ extension ScheduleItem {
 extension ScheduleItem {
 
     @objc(addInstructorsObject:)
-    @NSManaged public func addToInstructors(_ value: GroupLesson)
+    @NSManaged public func addToInstructors(_ value: Instructor)
 
     @objc(removeInstructorsObject:)
-    @NSManaged public func removeFromInstructors(_ value: GroupLesson)
+    @NSManaged public func removeFromInstructors(_ value: Instructor)
 
     @objc(addInstructors:)
     @NSManaged public func addToInstructors(_ values: NSSet)

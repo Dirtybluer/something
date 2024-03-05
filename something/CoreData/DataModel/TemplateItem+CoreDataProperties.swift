@@ -16,7 +16,7 @@ extension TemplateItem {
         return NSFetchRequest<TemplateItem>(entityName: "TemplateItem")
     }
 
-    @NSManaged public var templateID: UUID?
+    @NSManaged public var templateID: Int64
     @NSManaged public var scheduleItem: NSSet?
 
 }
