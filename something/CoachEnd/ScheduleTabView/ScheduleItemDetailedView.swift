@@ -10,14 +10,14 @@ import SwiftUI
 
 struct ScheduleItemDetailedView: View {
     var viewingInstructorName: String
-    var scheduleItem: LessonItem
+    var scheduleItem: ScheduleItem
     var body: some View {
         ScrollView {
             ZStack {
                 Circle()
-                    .fill(scheduleItem.color)
+                    .fill(Color.yellow)
                     .frame(width:150, height: 150)
-                Text(scheduleItem.emoji)
+                Text("🏂")
                     .font(.system(size: 80))
             }
             .padding(.top)
@@ -25,30 +25,28 @@ struct ScheduleItemDetailedView: View {
                 Section (header: Text("Summary")) {
                     HStack{
                         Spacer()
-                        Text(String(scheduleItem.numberOfParticipants))
+                        Text(String(scheduleItem.signUpNumber))
                             .font(.system(size: 50))
                         Text("Kids,")
-                        Text(String(scheduleItem.listOfInstructors.count))
+                        Text(String(scheduleItem.instructorNum))
                             .font(.system(size: 50))
                         Text("Instructors")
                         Spacer()
                     }
                     .fontWeight(/*@START_MENU_TOKEN@*/.heavy/*@END_MENU_TOKEN@*/)
                     .font(.system(size: 25))
-                    Text("...")
+                    Text(generateStringFromDate(date: scheduleItem.date) ?? "Date Not Avaliable")
                 }
                 
                 Section (header: Text("Instructors")) {
                     HStack {
                         List {
-                            ForEach(scheduleItem.listOfInstructors) { item in
-                                InstructorProfile(color: item.color, name: item.name)
+                            ForEach((scheduleItem.instructors?.allObjects as? [Instructor] ?? []), id: \.self) { instructor in
+                                InstructorProfile(name: instructor.skiName ?? "Unknown")
                             }
                         }
                     }
                 }
-                
-                
             }
             .frame(minWidth: 300, minHeight: 800)
             .scrollDisabled(true)
@@ -60,7 +58,7 @@ struct ScheduleItemDetailedView: View {
 }
 
 struct InstructorProfile: View {
-    var color: Color
+    var color: Color = Color.orange
     var name: String
     var body: some View {
         VStack {
@@ -80,8 +78,8 @@ struct InstructorProfile: View {
     }
 }
 
-struct ScheduleLessonView_Previews: PreviewProvider {
-    static var previews: some View {
-        ScheduleItemDetailedView(viewingInstructorName: "Sammy", scheduleItem: exampleLessons[0])
-    }
-}
+//struct ScheduleLessonView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ScheduleItemDetailedView(viewingInstructorName: "Sammy", scheduleItem: exampleLessons[0])
+//    }
+//}

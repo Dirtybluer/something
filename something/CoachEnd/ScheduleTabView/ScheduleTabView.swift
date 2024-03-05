@@ -7,14 +7,18 @@
 
 import Foundation
 import SwiftUI
+import CoreData
 
 struct ScheduleTabView: View {
     
-    @StateObject private var viewModel = ScheduleTabViewModel()
+    @StateObject private var viewModel: ScheduleTabViewModel
     
-    var viewingInstructorName: String = "Sammy"
+    init(context: NSManagedObjectContext) {
+        _viewModel = StateObject(wrappedValue: ScheduleTabViewModel(context: context))
+    }
 
     var body: some View {
+        var viewingInstructorName: String = self.viewModel.viewingIntructorSkiName
         NavigationView {
             VStack(spacing: 20) {
                 
@@ -40,7 +44,7 @@ struct ScheduleTabView: View {
                 .padding(.horizontal, 16)
                 
                 List {
-                    ForEach(exampleLessons) { item in
+                    ForEach(viewModel.showedScheduleItems) { item in
                         ZStack(alignment: .center) {
                             NavigationLink(destination: ScheduleItemDetailedView(viewingInstructorName: viewingInstructorName, scheduleItem: item)) {
                                 EmptyView()
@@ -56,13 +60,14 @@ struct ScheduleTabView: View {
             .navigationTitle(viewingInstructorName)
             .background(Color(UIColor.tertiarySystemGroupedBackground))
         }
+        .onAppear(perform: viewModel.pullShowedScheduleItems)
         
     }
 }
 
 
-struct ScheduleTabView_Previews: PreviewProvider {
-    static var previews: some View {
-        ScheduleTabView()
-    }
-}
+//struct ScheduleTabView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ScheduleTabView()
+//    }
+//}

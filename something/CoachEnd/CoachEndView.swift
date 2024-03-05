@@ -8,7 +8,7 @@ struct CoachEndView: View {
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            ScheduleTabView()
+            ScheduleTabView(context: viewContext)
                 .tabItem {
                     Image(systemName: "calendar")
                     Text("Schedule")

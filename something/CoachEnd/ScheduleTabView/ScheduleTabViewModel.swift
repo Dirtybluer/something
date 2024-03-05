@@ -6,24 +6,45 @@
 //
 
 import Foundation
+import CoreData
 
 class ScheduleTabViewModel: ObservableObject {
-    @Published var selectedDate: Date = Date()
-    @Published var showedScheduleItems: [ScheduleItemFake] = [
-        ScheduleItemFake(timeRange: "9:00 - 11:00", name: "Small - AM", numberOfParticipants: 5, numberOfInstructors: 3, location: "Kids Room", imageName: "sun.min.fill"),
-        ScheduleItemFake(timeRange: "13:00 - 15:00", name: "Bigger 3 - PM", numberOfParticipants: 3, numberOfInstructors: 3, location: "Big Kids Room", imageName: "snow"),
-        ScheduleItemFake(timeRange: "16:00 - 17:00", name: "Tea Time", numberOfParticipants: 0, numberOfInstructors: 2, location: "Theatre", imageName: "cup.and.saucer.fill"),
-        ScheduleItemFake(timeRange: "20:15 - 22:30", name: "Night Shift", numberOfParticipants: 0, numberOfInstructors: 7, location: "Theatre", imageName: "moon.fill"),
-    ]
+    let context: NSManagedObjectContext
+    @Published var selectedDate: Date = generateDateFromString(dateString: "09-Jan-24")!
+//    @Published var selectedDate: Date = Date()
+    @Published var showedScheduleItems: [ScheduleItem] = []
+    @Published var viewingIntructorSkiName: String = "Amy"
+    
+    init(context: NSManagedObjectContext) {
+        self.context = context
+        self.pullShowedScheduleItems()
+    }
     
     func pullShowedScheduleItems() {
-        
+        let request = NSFetchRequest<ScheduleItem>(entityName: "ScheduleItem")
+
+        let startOfDay = Calendar.current.startOfDay(for: selectedDate)
+        let endOfDay = Calendar.current.date(byAdding: .day, value: 1, to: startOfDay)!
+
+        request.predicate = NSPredicate(format: "(date >= %@) AND (date < %@) AND ANY instructors.skiName == %@", startOfDay as NSDate, endOfDay as NSDate, viewingIntructorSkiName.uppercased())
+//        request.predicate = NSPredicate(format: "(date >= %@) AND (date < %@)", startOfDay as NSDate, endOfDay as NSDate)
+//        request.predicate = NSPredicate(format: "ANY instructors.skiName == %@", viewingIntructorSkiName.uppercased())
+        request.sortDescriptors = [NSSortDescriptor(key: "startTime", ascending: true)]
+
+        do {
+            print("Pulling ScheduleItem Objects")
+            showedScheduleItems = try context.fetch(request)
+            print("Number of Pulled ScheduleItem Objects: \(showedScheduleItems.count)")
+        } catch {
+            print("Failed to fetch ScheduleItem objects:", error.localizedDescription)
+        }
     }
     
     func updateDate(by days: Int) {
-       if let newDate = Calendar.current.date(byAdding: .day, value: days, to: self.selectedDate) {
-           self.selectedDate = newDate
+        if let newDate = Calendar.current.date(byAdding: .day, value: days, to: self.selectedDate) {
+            self.selectedDate = newDate
         }
+        self.pullShowedScheduleItems()
     }
     
 }

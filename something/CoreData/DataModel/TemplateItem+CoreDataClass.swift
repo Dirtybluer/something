@@ -20,10 +20,14 @@ public class TemplateItem: NSManagedObject {
         let templateItems = (try? context.fetch(request)) ?? []
         
         if let templateItem = templateItems.first {
-            print("found templateItem with id \(id)")
+//            print("found templateItem with id \(id)")
             return templateItem
         } else {
+            print("not found templateItem with id \(id)")
             return nil
         }
+    }
+    static func addNewTemplate() {
+        // todo
     }
 }

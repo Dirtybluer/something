@@ -11,5 +11,7 @@ import CoreData
 
 
 public class GroupLesson: TemplateItem {
-    
+    static func addNewGroupLesson() {
+        // todo
+    }
 }

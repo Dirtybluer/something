@@ -11,5 +11,7 @@ import CoreData
 
 
 public class PrivateLesson: TemplateItem {
-
+    static func addNewPrivateLesson() {
+        // todo
+    }
 }

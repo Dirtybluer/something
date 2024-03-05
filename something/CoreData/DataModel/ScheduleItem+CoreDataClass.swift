@@ -11,5 +11,7 @@ import CoreData
 
 
 public class ScheduleItem: NSManagedObject {
-
+    static func addNewScheduleItem() {
+        // todo
+    }
 }

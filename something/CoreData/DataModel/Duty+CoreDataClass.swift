@@ -11,5 +11,7 @@ import CoreData
 
 
 public class Duty: TemplateItem {
-
+    static func addNewDuty() {
+        // todo
+    }
 }

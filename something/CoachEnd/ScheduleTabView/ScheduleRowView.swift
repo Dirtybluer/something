@@ -9,17 +9,17 @@ import Foundation
 import SwiftUI
 
 struct ScheduleRowView: View {
-    var item: LessonItem
+    var item: ScheduleItem
     
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text(item.timeRange)
+            Text((item.startTime ?? "No Start Time") + " - " + (item.endTime ?? "No End Time") )
                 .font(.subheadline)
                 .foregroundColor(.black)
                 .frame(maxWidth: .infinity, alignment: .center)
                 
             HStack {
-                Image(systemName: item.imageName)
+                Image(systemName: "sun.min.fill")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 24, height: 24)
@@ -29,21 +29,21 @@ struct ScheduleRowView: View {
                     .foregroundColor(.orange)
                 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(item.name)
+                    Text(item.scheduleName ?? "Name Not Provided")
                         .font(.headline)
                         .fontWeight(.bold)
-                    Text(item.meetingPoint ?? "Not Provided")
+                    Text(item.meetingPoint ?? "Meeting Point Not Provided")
                         .font(.caption)
                 }
                 
                 Spacer()
                 
                 VStack(alignment: .leading) {
-                    if (item.numberOfParticipants != 0) {
+                    if (item.signUpNumber != 0) {
                         HStack {
                             Image(systemName: "person.2.fill")
                                 .font(.caption)
-                            Text("\(item.numberOfParticipants) Kids")
+                            Text("\(item.signUpNumber) Kids")
                                 .font(.caption)
                                 .foregroundColor(.black)
                         }
@@ -52,7 +52,7 @@ struct ScheduleRowView: View {
                     HStack {
                         Image(systemName: "person.crop.rectangle.stack.fill")
                             .font(.caption)
-                        Text("\(item.listOfInstructors.count) Coaches")
+                        Text("\(item.instructors?.count ?? 0) Coaches")
                             .font(.caption)
                             .foregroundColor(.black)
                     }
@@ -66,8 +66,8 @@ struct ScheduleRowView: View {
     }
 }
 
-struct ScheduleRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        ScheduleRowView(item: exampleLessons[1])
-    }
-}
+//struct ScheduleRowView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ScheduleRowView(item: exampleLessons[1])
+//    }
+//}

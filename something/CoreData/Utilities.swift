@@ -40,14 +40,25 @@ class CSVData {
     }
 }
 
-func generateDateFromString(dateString: String) -> Date? {
+func generateDateFromString(dateString: String, format: String = "dd-MMM-yy") -> Date? {
     var resultDate: Date? = nil
     let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "d-MMM-yy"
+    dateFormatter.dateFormat = format
     if let date = dateFormatter.date(from: dateString) {
         resultDate = date
     } else {
         print("The string cannot be converted to a date.")
     }
     return resultDate
+}
+
+func generateStringFromDate(date: Date?, format: String = "dd-MMM-yy") -> String? {
+    if (date != nil) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd-MM-yy"
+        let dateString = formatter.string(from: date!)
+        return dateString
+    } else {
+        return nil
+    }
 }

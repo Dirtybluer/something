@@ -27,6 +27,7 @@
         <attribute name="skiLevel" optional="YES" attributeType="String"/>
         <attribute name="skill" optional="YES" attributeType="String"/>
         <attribute name="skiName" optional="YES" attributeType="String"/>
+        <relationship name="scheduleItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ScheduleItem" inverseName="instructors" inverseEntity="ScheduleItem"/>
     </entity>
     <entity name="Other" representedClassName=".Other" parentEntity="TemplateItem" syncable="YES">
         <attribute name="describe" optional="YES" attributeType="String"/>
@@ -60,7 +61,7 @@
         <attribute name="scheduleType" optional="YES" attributeType="String"/>
         <attribute name="signUpNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="startTime" optional="YES" attributeType="String"/>
-        <relationship name="instructors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Instructor"/>
+        <relationship name="instructors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Instructor" inverseName="scheduleItems" inverseEntity="Instructor"/>
         <relationship name="scheduleItemTemplate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TemplateItem" inverseName="scheduleItem" inverseEntity="TemplateItem"/>
     </entity>
     <entity name="Service" representedClassName=".Service" parentEntity="TemplateItem" syncable="YES">

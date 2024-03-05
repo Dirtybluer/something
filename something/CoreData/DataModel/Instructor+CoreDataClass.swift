@@ -20,10 +20,16 @@ public class Instructor: NSManagedObject {
         let Instructors = (try? context.fetch(request)) ?? []
         
         if let Instructor = Instructors.first {
-            print("found instructor with skiName \(skiName)")
+//            print("found instructor with skiName \(skiName)")
             return Instructor
         } else {
+            print("not found instructor with skiName \(skiName)")
             return nil
         }
     }
+    static func addNewInstructor() {
+        // todo
+    }
+
+    // todo move example data to here
 }

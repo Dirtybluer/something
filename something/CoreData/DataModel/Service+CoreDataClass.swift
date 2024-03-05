@@ -11,5 +11,7 @@ import CoreData
 
 
 public class Service: TemplateItem {
-
+    static func addNewService() {
+        // todo
+    }
 }

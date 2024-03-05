@@ -11,5 +11,7 @@ import CoreData
 
 
 public class Other: TemplateItem {
-
+    static func addNewOther() {
+        // todo
+    }
 }

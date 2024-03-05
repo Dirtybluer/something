@@ -20,7 +20,19 @@ class CoreDataStack: ObservableObject {
         return container
     }()
     
-    private init() { 
+    static var preview: CoreDataStack = {
+        let coreDataStack = CoreDataStack(inMemory: true)
+        let context = coreDataStack.persistentContainer.viewContext
+        
+        return coreDataStack
+    }()
+    
+    private init(inMemory: Bool = false) {
+        
+        if inMemory {
+            persistentContainer.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
+        }
+        
 //      create initial dummy data for coachEnd at the first launch
         let isFirstLaunch = UserDefaults.standard.bool(forKey: "isFirstLaunch")
         if isFirstLaunch == false {
@@ -38,6 +50,7 @@ class CoreDataStack: ObservableObject {
                         let resourceRow = resourceCSVData.getData()[resourceName]![rowNumber]
                         if resourceName == "LessonGroup" {
 //                             Create LessonGroup entity and set its properties
+//                            todo: move the following code into a class function of LessonGroup
                             let newGroupLesson = NSEntityDescription.insertNewObject(forEntityName: "GroupLesson", into: self.persistentContainer.viewContext) as! GroupLesson
                             newGroupLesson.name = resourceRow[0]
                             newGroupLesson.templateID = Int64(resourceRow[1])!
@@ -74,13 +87,17 @@ class CoreDataStack: ObservableObject {
                             newScheduleItem.scheduleType = resourceRow[6]
                             newScheduleItem.scheduleItemTemplate = TemplateItem.withID(Int64(resourceRow[7])!, context: self.persistentContainer.viewContext)
                             newScheduleItem.signUpNumber = Int64(resourceRow[8]) ?? -1
-                            if let instructor = Instructor.withSkiName(resourceRow[9], context: self.persistentContainer.viewContext) {
-                                newScheduleItem.instructors = NSSet(object: instructor)
+                            
+                            // currently the code assumes that there's always only one instructor
+                            if let instructor = Instructor.withSkiName(resourceRow[9].uppercased(), context: self.persistentContainer.viewContext) {
+                                newScheduleItem.instructors = NSSet(array: [instructor])
                             }
                             newScheduleItem.gmtCreate = Date()
                             newScheduleItem.gmtModify = nil
                             newScheduleItem.instructorNum = Int64(resourceRow[12]) ?? -1
                             
+                            
+//                            print("\(newScheduleItem.instructors?.count)")
                             self.save()
                         }
                     }
