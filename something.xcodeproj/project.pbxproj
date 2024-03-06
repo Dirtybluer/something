@@ -16,7 +16,6 @@
 		4A2CF6AA2B8905380076234D /* DataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF6A92B8905380076234D /* DataStructures.swift */; };
 		4A35A34D2B968E09004DBC6B /* Something.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A35A34B2B968E09004DBC6B /* Something.xcdatamodeld */; };
 		4A35A3562B968E71004DBC6B /* ScheduleItem.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4A35A3532B968E71004DBC6B /* ScheduleItem.csv */; };
-		4A35A3572B968E71004DBC6B /* LessonGroup.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4A35A3542B968E71004DBC6B /* LessonGroup.csv */; };
 		4A35A35B2B969A8E004DBC6B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A35A35A2B969A8E004DBC6B /* CoreDataStack.swift */; };
 		4A35A3772B96A84C004DBC6B /* TemplateItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A35A3692B96A84C004DBC6B /* TemplateItem+CoreDataClass.swift */; };
 		4A35A3782B96A84C004DBC6B /* TemplateItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A35A36A2B96A84C004DBC6B /* TemplateItem+CoreDataProperties.swift */; };
@@ -37,6 +36,7 @@
 		4A35A3A12B979379004DBC6B /* Service+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A35A3932B979379004DBC6B /* Service+CoreDataProperties.swift */; };
 		4A35A3A42B97C741004DBC6B /* Instructor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A35A3A22B97C741004DBC6B /* Instructor+CoreDataClass.swift */; };
 		4A35A3A52B97C741004DBC6B /* Instructor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A35A3A32B97C741004DBC6B /* Instructor+CoreDataProperties.swift */; };
+		4A35A3A72B97DE8A004DBC6B /* GroupLesson.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4A35A3A62B97DE8A004DBC6B /* GroupLesson.csv */; };
 		C73614982B8701C70086372C /* somethingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73614972B8701C70086372C /* somethingApp.swift */; };
 		C736149A2B8701C70086372C /* CoachEndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73614992B8701C70086372C /* CoachEndView.swift */; };
 		C736149C2B8701C80086372C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C736149B2B8701C80086372C /* Assets.xcassets */; };
@@ -75,7 +75,6 @@
 		4A2CF6A92B8905380076234D /* DataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructures.swift; sourceTree = "<group>"; };
 		4A35A34C2B968E09004DBC6B /* Something.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Something.xcdatamodel; sourceTree = "<group>"; };
 		4A35A3532B968E71004DBC6B /* ScheduleItem.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ScheduleItem.csv; sourceTree = "<group>"; };
-		4A35A3542B968E71004DBC6B /* LessonGroup.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LessonGroup.csv; sourceTree = "<group>"; };
 		4A35A35A2B969A8E004DBC6B /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		4A35A3692B96A84C004DBC6B /* TemplateItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TemplateItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4A35A36A2B96A84C004DBC6B /* TemplateItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TemplateItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -96,6 +95,7 @@
 		4A35A3932B979379004DBC6B /* Service+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4A35A3A22B97C741004DBC6B /* Instructor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instructor+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4A35A3A32B97C741004DBC6B /* Instructor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instructor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4A35A3A62B97DE8A004DBC6B /* GroupLesson.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GroupLesson.csv; sourceTree = "<group>"; };
 		C73614942B8701C70086372C /* something.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = something.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73614972B8701C70086372C /* somethingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = somethingApp.swift; sourceTree = "<group>"; };
 		C73614992B8701C70086372C /* CoachEndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachEndView.swift; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				4A35A3802B9791F1004DBC6B /* Instructor.csv */,
-				4A35A3542B968E71004DBC6B /* LessonGroup.csv */,
+				4A35A3A62B97DE8A004DBC6B /* GroupLesson.csv */,
 				4A35A3532B968E71004DBC6B /* ScheduleItem.csv */,
 			);
 			path = DummyRawData;
@@ -195,9 +195,9 @@
 			isa = PBXGroup;
 			children = (
 				4A35A37C2B977AB0004DBC6B /* Utilities.swift */,
+				4A35A35A2B969A8E004DBC6B /* CoreDataStack.swift */,
 				4A35A35E2B96A813004DBC6B /* DataModel */,
 				4A35A3512B968E5A004DBC6B /* DummyRawData */,
-				4A35A35A2B969A8E004DBC6B /* CoreDataStack.swift */,
 				4A35A34B2B968E09004DBC6B /* Something.xcdatamodeld */,
 			);
 			path = CoreData;
@@ -385,7 +385,7 @@
 			files = (
 				C736149F2B8701C80086372C /* Preview Assets.xcassets in Resources */,
 				4A35A3562B968E71004DBC6B /* ScheduleItem.csv in Resources */,
-				4A35A3572B968E71004DBC6B /* LessonGroup.csv in Resources */,
+				4A35A3A72B97DE8A004DBC6B /* GroupLesson.csv in Resources */,
 				4A35A3812B9791F1004DBC6B /* Instructor.csv in Resources */,
 				C736149C2B8701C80086372C /* Assets.xcassets in Resources */,
 			);

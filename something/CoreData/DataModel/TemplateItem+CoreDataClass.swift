@@ -11,7 +11,7 @@ import CoreData
 
 
 public class TemplateItem: NSManagedObject {
-    static func withID(_ id: Int64, context: NSManagedObjectContext) -> TemplateItem? {
+    static func withID(id: Int64, context: NSManagedObjectContext) -> TemplateItem? {
         // look up template id in core data
         let request = NSFetchRequest<TemplateItem>(entityName: "TemplateItem")
         request.predicate = NSPredicate(format: "templateID = %@", NSNumber(value: Int(id)))

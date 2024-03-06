@@ -8,6 +8,10 @@
 import Foundation
 
 class CSVData {
+    // this class will find the csv file within the scope whose name matches the provided resourceName.
+    // the class assumes that multiple resourceName will be provided
+    // the class will read that data into a dictionary of list of list of string, the keys of the dictionary are the names of resuources.
+    // the list of list of string holds its first row as the column name
     private var data: [String: [[String]]]
     let resourceNames: [String]
     let resourceType: String

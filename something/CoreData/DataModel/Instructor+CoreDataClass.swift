@@ -27,9 +27,36 @@ public class Instructor: NSManagedObject {
             return nil
         }
     }
-    static func addNewInstructor() {
-        // todo
+    
+    static func addNewInstructor(context: NSManagedObjectContext, id:  Int64?, name: String?, skiName: String?, residence: String?, skill: String?, skiLevel: String?, sbLevel: String?) {
+        
+        let newInstructor = NSEntityDescription.insertNewObject(forEntityName: "Instructor", into: context) as! Instructor
+        
+        if let id = id {
+            newInstructor.id = id
+        }
+        newInstructor.name = name
+        newInstructor.skiName = skiName
+        newInstructor.residence = residence
+        newInstructor.skill = skill
+        newInstructor.skiLevel = skiLevel
+        newInstructor.sbLevel = sbLevel
     }
-
-    // todo move example data to here
+    
+    static func createDummyData(context: NSManagedObjectContext) {
+        let resourceName = "Instructor"
+        
+        if let resourceCSVData = CSVData(resourceNames: [resourceName]).getData()[resourceName] {
+            
+            let numOfRows = resourceCSVData.count
+            
+            for rowNumber in 1..<numOfRows {
+                let resourceRow = resourceCSVData[rowNumber]
+                
+                Instructor.addNewInstructor(context: context, id: Int64(resourceRow[0]), name: resourceRow[1], skiName: resourceRow[2], residence: resourceRow[3], skill: resourceRow[4], skiLevel: resourceRow[5], sbLevel: resourceRow[6])
+            }
+        } else {
+            print("Failed to read dummy data for Instructor")
+        }
+    }
 }
