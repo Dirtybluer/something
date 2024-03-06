@@ -24,6 +24,10 @@ class CoreDataStack: ObservableObject {
         let coreDataStack = CoreDataStack(inMemory: true)
         let context = coreDataStack.persistentContainer.viewContext
         
+        GroupLesson.createDummyData(context: context)
+        Instructor.createDummyData(context: context)
+        ScheduleItem.createDummyData(context: context)
+        
         return coreDataStack
     }()
     

@@ -203,6 +203,13 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		4A4FB2582B98828C00F44CD2 /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
 		C736148B2B8701C70086372C = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +281,7 @@
 		C7CA44A32B94C08100B79ACA /* ManagerEnd */ = {
 			isa = PBXGroup;
 			children = (
+				4A4FB2582B98828C00F44CD2 /* Overview */,
 				C7CA44A42B94C08F00B79ACA /* ManagerEndView.swift */,
 			);
 			path = ManagerEnd;

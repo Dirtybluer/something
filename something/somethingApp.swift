@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct somethingApp: App {
+    
     @StateObject private var coreDataStack = CoreDataStack.shared
     
     var body: some Scene {
         WindowGroup {
             if UIDevice.current.userInterfaceIdiom == .pad {
                 ManagerEndView()
+                    .environment(\.managedObjectContext, coreDataStack.persistentContainer.viewContext)
             } else {
                 CoachEndView()
                     .environment(\.managedObjectContext, coreDataStack.persistentContainer.viewContext)

@@ -37,5 +37,6 @@ struct CoachEndView: View {
 struct CoachEndView_Previews: PreviewProvider {
     static var previews: some View {
         CoachEndView()
+            .environment(\.managedObjectContext, CoreDataStack.preview.persistentContainer.viewContext)
     }
 }

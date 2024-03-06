@@ -18,7 +18,7 @@ struct ScheduleTabView: View {
     }
 
     var body: some View {
-        var viewingInstructorName: String = self.viewModel.viewingIntructorSkiName
+        let viewingInstructorName: String = self.viewModel.viewingIntructorSkiName
         NavigationView {
             VStack(spacing: 20) {
                 
@@ -66,8 +66,8 @@ struct ScheduleTabView: View {
 }
 
 
-//struct ScheduleTabView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ScheduleTabView()
-//    }
-//}
+struct ScheduleTabView_Previews: PreviewProvider {
+    static var previews: some View {
+        ScheduleTabView(context: CoreDataStack.preview.persistentContainer.viewContext)
+    }
+}
