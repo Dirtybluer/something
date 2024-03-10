@@ -12,13 +12,13 @@ struct TaskRowView : View {
 
     var body : some View {
         HStack {
-            Image(systemName: item.icon)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 50, height: 50)
-                .background(Circle().fill(Color.blue.opacity(0.2)))
-                .clipShape(Circle())
-
+            ZStack {
+                Circle()
+                    .fill(item.bgColor)
+                    .frame(width:60, height: 60)
+                Text(item.icon)
+                    .font(.system(size: 40))
+            }
 
             VStack(alignment: .leading, spacing: 2) {
                 HStack{
@@ -39,12 +39,3 @@ struct TaskRowView : View {
     }
 }
 
-struct TaskItem: Identifiable {
-    var id = UUID()
-    var icon: String
-    var category: String
-    var title: String
-    var time: String
-    var instructors: [String]
-    var numOfGuests: Int
-}
