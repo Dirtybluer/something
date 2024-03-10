@@ -44,8 +44,12 @@
 		C73614A92B8701C80086372C /* somethingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73614A82B8701C80086372C /* somethingTests.swift */; };
 		C73614B32B8701C90086372C /* somethingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73614B22B8701C90086372C /* somethingUITests.swift */; };
 		C73614B52B8701C90086372C /* somethingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73614B42B8701C90086372C /* somethingUITestsLaunchTests.swift */; };
+		C776F5B22B9DC47A00220866 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C776F5B12B9DC47A00220866 /* TaskRowView.swift */; };
+		C776F5B52B9DD1B900220866 /* OtherPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C776F5B42B9DD1B900220866 /* OtherPickerView.swift */; };
+		C776F5B72B9DE77000220866 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C776F5B62B9DE77000220866 /* SampleData.swift */; };
+		C776F5B92B9DF2FF00220866 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C776F5B82B9DF2FF00220866 /* DatePickerView.swift */; };
 		C7CA44A52B94C08F00B79ACA /* ManagerEndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA44A42B94C08F00B79ACA /* ManagerEndView.swift */; };
-		C7CA44A72B94D0EA00B79ACA /* LessonPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA44A62B94D0EA00B79ACA /* LessonPickerView.swift */; };
+		C7CA44A72B94D0EA00B79ACA /* TaskPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA44A62B94D0EA00B79ACA /* TaskPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,8 +110,12 @@
 		C73614AE2B8701C90086372C /* somethingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = somethingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73614B22B8701C90086372C /* somethingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = somethingUITests.swift; sourceTree = "<group>"; };
 		C73614B42B8701C90086372C /* somethingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = somethingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C776F5B12B9DC47A00220866 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
+		C776F5B42B9DD1B900220866 /* OtherPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherPickerView.swift; sourceTree = "<group>"; };
+		C776F5B62B9DE77000220866 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		C776F5B82B9DF2FF00220866 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		C7CA44A42B94C08F00B79ACA /* ManagerEndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerEndView.swift; sourceTree = "<group>"; };
-		C7CA44A62B94D0EA00B79ACA /* LessonPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonPickerView.swift; sourceTree = "<group>"; };
+		C7CA44A62B94D0EA00B79ACA /* TaskPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +147,10 @@
 			isa = PBXGroup;
 			children = (
 				4A2CF6952B88AB060076234D /* SchoolTabView.swift */,
-				C7CA44A62B94D0EA00B79ACA /* LessonPickerView.swift */,
+				C7CA44A62B94D0EA00B79ACA /* TaskPickerView.swift */,
+				C776F5B12B9DC47A00220866 /* TaskRowView.swift */,
+				C776F5B42B9DD1B900220866 /* OtherPickerView.swift */,
+				C776F5B82B9DF2FF00220866 /* DatePickerView.swift */,
 			);
 			path = SchoolTabView;
 			sourceTree = "<group>";
@@ -271,6 +282,7 @@
 		C7CA44A22B94BFF400B79ACA /* CoachEnd */ = {
 			isa = PBXGroup;
 			children = (
+				C776F5B62B9DE77000220866 /* SampleData.swift */,
 				C73614992B8701C70086372C /* CoachEndView.swift */,
 				4A2CF69A2B88ADB50076234D /* ScheduleTabView */,
 				4A2CF6992B88AD2E0076234D /* SchoolTabView */,
@@ -425,19 +437,23 @@
 				C7CA44A52B94C08F00B79ACA /* ManagerEndView.swift in Sources */,
 				4A2CF6A42B8902870076234D /* ScheduleItemDetailedView.swift in Sources */,
 				4A35A39C2B979379004DBC6B /* GroupLesson+CoreDataClass.swift in Sources */,
-				C7CA44A72B94D0EA00B79ACA /* LessonPickerView.swift in Sources */,
+				C7CA44A72B94D0EA00B79ACA /* TaskPickerView.swift in Sources */,
 				4A35A3A52B97C741004DBC6B /* Instructor+CoreDataProperties.swift in Sources */,
 				4A2CF6962B88AB060076234D /* SchoolTabView.swift in Sources */,
 				4A35A39A2B979379004DBC6B /* PrivateLesson+CoreDataClass.swift in Sources */,
 				4A35A39B2B979379004DBC6B /* PrivateLesson+CoreDataProperties.swift in Sources */,
 				4A35A39E2B979379004DBC6B /* Duty+CoreDataClass.swift in Sources */,
+				C776F5B72B9DE77000220866 /* SampleData.swift in Sources */,
 				4A35A37D2B977AB0004DBC6B /* Utilities.swift in Sources */,
+				C776F5B92B9DF2FF00220866 /* DatePickerView.swift in Sources */,
 				4A35A3962B979379004DBC6B /* ScheduleItem+CoreDataClass.swift in Sources */,
 				C736149A2B8701C70086372C /* CoachEndView.swift in Sources */,
 				4A35A3982B979379004DBC6B /* Other+CoreDataClass.swift in Sources */,
 				4A35A3972B979379004DBC6B /* ScheduleItem+CoreDataProperties.swift in Sources */,
 				4A35A3772B96A84C004DBC6B /* TemplateItem+CoreDataClass.swift in Sources */,
 				C73614982B8701C70086372C /* somethingApp.swift in Sources */,
+				C776F5B52B9DD1B900220866 /* OtherPickerView.swift in Sources */,
+				C776F5B22B9DC47A00220866 /* TaskRowView.swift in Sources */,
 				4A2CF6A02B88B5AE0076234D /* ScheduleCalendarView.swift in Sources */,
 				4A35A3A12B979379004DBC6B /* Service+CoreDataProperties.swift in Sources */,
 				4A2CF6AA2B8905380076234D /* DataStructures.swift in Sources */,

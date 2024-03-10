@@ -8,39 +8,22 @@ import SwiftUI
 
 
 struct SchoolTabView: View  {
-    private var resort = "Tomamu"
+    private var resortName = "Tomamu"
 
     @State private var selectedDate: Date = Date()
+    @State private var isDatePickerPresented = false
+
     
     @State private var selectedCategory: String = "Lessons"
-    let categories = ["Lessons", "Duty", "Services", "Others"]
+    let categories = ["Lessons", "Duties", "Service", "Others"]
     
     var body: some View {
         NavigationView {
             VStack {
-                HStack {
-                    Button(action: { updateDate(by: -1) }) {
-                        Image(systemName: "chevron.left")
-                    }
-                    Text(dateFormatter.string(from: selectedDate))
-                        .font(.title3)
-                        .fontWeight(.bold)
-                    Button(action: { updateDate(by: 1) }) {
-                        Image(systemName: "chevron.right")
-                    }
-                    
-                    Spacer()
-                    
-                    Button(action: {
-                        // todo: 跳转查看日历
-                    }) {
-                        Image(systemName: "calendar")
-                            .font(.title3)
-                    }
-                }
-                .padding(.horizontal, 16)
+                //
+                DatePickerView(selectedDate: $selectedDate)
                 
-                Picker("Category", selection: $selectedCategory) {
+                Picker("", selection: $selectedCategory) {
                     ForEach(categories, id: \.self) { category in
                         Text(category).tag(category)
                     }
@@ -49,12 +32,14 @@ struct SchoolTabView: View  {
                 .padding()
                 
                 if selectedCategory == "Lessons" {
-                    LessonPickerView()
-                } else {
-                    Text("todo")
+                    TaskPickerView(tasks: lessons)
+                } else if selectedCategory == "Duties"{
+                    TaskPickerView(tasks: duties)
+                } else if selectedCategory == "Service"{
+                    TaskPickerView(tasks: service)
                 }
             }
-            .navigationTitle(resort)
+            .navigationTitle(resortName)
             .background(Color(UIColor.systemGroupedBackground))
         }
     }
