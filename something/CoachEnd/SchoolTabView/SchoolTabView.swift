@@ -13,7 +13,7 @@ struct SchoolTabView: View  {
     @State private var selectedDate: Date = Date()
     
     @State private var selectedCategory: String = "Lessons"
-    let categories = ["Lessons", "Duty", "Services", "Others"]
+    let categories = ["Lessons", "Duties", "Service", "Others"]
     
     var body: some View {
         NavigationView {
@@ -49,9 +49,11 @@ struct SchoolTabView: View  {
                 .padding()
                 
                 if selectedCategory == "Lessons" {
-                    LessonPickerView()
-                } else {
-                    Text("todo")
+                    TaskPickerView(tasks: lessons)
+                } else if selectedCategory == "Duties"{
+                    TaskPickerView(tasks: duties)
+                } else if selectedCategory == "Service"{
+                    TaskPickerView(tasks: service)
                 }
             }
             .navigationTitle(resort)
