@@ -64,8 +64,9 @@ struct ScheduleRowView: View {
                 }
                 
             }
-            .padding()
+            .padding(.all)
             .background(Color(UIColor.secondarySystemGroupedBackground))
+            .foregroundColor(.black)
             .clipShape(RoundedRectangle(cornerRadius: 10))
         }
     }
@@ -73,6 +74,6 @@ struct ScheduleRowView: View {
 
 struct ScheduleRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ScheduleRowView(item: currenDateSchdule[1])
+        ScheduleRowView(item: exampleSchduleItems[1])
     }
 }

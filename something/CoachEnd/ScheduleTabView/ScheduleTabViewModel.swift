@@ -19,7 +19,7 @@ class ScheduleTabViewModel: ObservableObject {
     
     func pullShowedScheduleItems() {
         var pulledScheduleItems: [ScheduleItem] = []
-        for item in currenDateSchdule {
+        for item in exampleSchduleItems {
             if (item.date == selectedDate && item.instructors.contains(viewingIntructorSkiName)) {
                 pulledScheduleItems.append(item)
             }

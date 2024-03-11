@@ -24,36 +24,34 @@ struct ScheduleTabView: View {
 
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
-                DatePickerView(selectedDate: $viewModel.selectedDate)
-                    .onChange(of: viewModel.selectedDate) { newValue in
-                            viewModel.pullShowedScheduleItems()
-                        }
-                if viewModel.showedScheduleItems.count == 0 {
-                    VStack {
-                        Spacer()
-                        HStack {
+            
+            ScrollView {
+                VStack(spacing: 20) {
+                    DatePickerView(selectedDate: $viewModel.selectedDate)
+                        .onChange(of: viewModel.selectedDate) { newValue in
+                                viewModel.pullShowedScheduleItems()
+                            }
+                    if viewModel.showedScheduleItems.count == 0 {
+                        VStack {
                             Spacer()
-                            Text("Schedule is Empty")
-                                .foregroundColor(.gray)
+                            HStack {
+                                Spacer()
+                                Text("Schedule is Empty")
+                                    .foregroundColor(.gray)
+                                Spacer()
+                            }
                             Spacer()
                         }
-                        Spacer()
-                    }
-                } else {
-                    List {
+                    } else {
                         ForEach(viewModel.showedScheduleItems) { item in
                             ZStack(alignment: .center) {
                                 NavigationLink(destination: ScheduleItemDetailedView(viewingInstructorName: viewingInstructorName, scheduleItem: item)) {
-                                    EmptyView()
+                                    ScheduleRowView(item: item)
                                 }
-                                ScheduleRowView(item: item)
                             }
                         }
-                        .listRowBackground(Color.clear)
-                        .listRowSeparator(.hidden)
+                        .padding(.horizontal)
                     }
-                    .listStyle(PlainListStyle())
                 }
             }
             .navigationTitle(viewingInstructorName.capitalized)

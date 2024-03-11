@@ -11,8 +11,56 @@ struct ProfileTabView: View {
     
     @Binding var viewingInstructorName: String
     
+    @State var today: Date = Date()  // Add this line
+    
+    var viewingInstructor: Instructor {
+        Instructor.getInstructor(skiName: viewingInstructorName)!
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView() {
+            Form {
+                Section {
+                    ProfileHeaderView(viewingInstructor: viewingInstructor)
+                }
+                .listRowInsets(EdgeInsets())
+                .listRowBackground(Color(UIColor.tertiarySystemGroupedBackground))
+                
+                Section (header: Text("Timesheet")) {
+                    ProfileTimeSheetView(viewingInstructorName: viewingInstructorName, today: $today)
+                }
+                .listRowInsets(EdgeInsets())
+                .listRowBackground(Color(UIColor.tertiarySystemGroupedBackground))
+                
+                Section {
+                    HStack {
+                        Text("Top Lesson")
+                        Spacer()
+                        Text("Tiger")
+                            .foregroundColor(.gray)
+                    }
+                    HStack {
+                        Text("Top Service")
+                        Spacer()
+                        Text("Ski Pro Shop")
+                            .foregroundColor(.gray)
+                    }
+                    HStack {
+                        Text("Delayed Days Off")
+                        Spacer()
+                        Text("0")
+                            .foregroundColor(.gray)
+                    }
+                }
+                
+                
+                Section (header: Text("Uniform")) {
+                    ProfileUniformView()
+                }
+            }
+            .navigationTitle("My Profile")
+            .background(Color(UIColor.tertiarySystemGroupedBackground))
+        }
     }
 }
 
