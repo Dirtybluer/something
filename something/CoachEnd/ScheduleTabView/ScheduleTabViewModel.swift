@@ -11,7 +11,7 @@ import CoreData
 class ScheduleTabViewModel: ObservableObject {
     @Published var selectedDate: Date = generateDateFromString(dateString: "09-Jan-24")!
     @Published var showedScheduleItems: [ScheduleItem] = []
-    @Published var viewingIntructorSkiName: String = "BENJAMIN"
+    @Published var viewingIntructorSkiName: String = "Sammy"
     
     
     

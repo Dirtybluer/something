@@ -24,21 +24,27 @@ struct ScheduleRowView: View {
                         .fill(item.color)
                         .frame(width: 60, height: 60)
                     Text(item.icon)
-                        .font(.system(size: 40))
+                        .font(.system(size: 35))
                 }
                 
                 VStack(alignment: .leading, spacing: 4) {
+                    Text(item.type)
+                        .font(.caption)
+                        .foregroundColor(.gray)
                     Text(item.scheduleName ?? "Name Not Provided")
                         .font(.headline)
                         .fontWeight(.bold)
-                    Text(item.meetingPoint ?? "Meeting Point Not Provided")
-                        .font(.caption)
+                    if let meetingPoint = item.meetingPoint {
+                        Text(meetingPoint)
+                            .font(.caption)
+                    }
+                    
                 }
                 
                 Spacer()
                 
                 VStack(alignment: .leading) {
-                    if (item.signUpNum != 0) {
+                    if (item.signUpNum != 0 && item.signUpNum != -1) {
                         HStack {
                             Image(systemName: "person.2.fill")
                                 .font(.caption)
