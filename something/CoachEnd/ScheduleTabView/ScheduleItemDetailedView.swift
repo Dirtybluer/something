@@ -24,25 +24,30 @@ struct ScheduleItemDetailedView: View {
             Form {
                 Section (header: Text("Summary")) {
                     HStack{
+                        Text("Guests")
                         Spacer()
                         Text(String(scheduleItem.signUpNum))
-                            .font(.system(size: 45))
-                        Text("Guests,")
-                        Text(String(scheduleItem.instructors.count))
-                            .font(.system(size: 45))
-                        Text("Instructor")
+                            .foregroundColor(.gray)
+                    }
+                    .fontWeight(/*@START_MENU_TOKEN@*/.heavy/*@END_MENU_TOKEN@*/)
+                    .font(.system(size: 25))
+                    HStack{
+                        Text("Instructors")
                         Spacer()
+                        Text(String(scheduleItem.instructors.count))
+                            .foregroundColor(.gray)
                     }
                     .fontWeight(/*@START_MENU_TOKEN@*/.heavy/*@END_MENU_TOKEN@*/)
                     .font(.system(size: 25))
                     HStack {
-                        Spacer()
                         if scheduleItem.scheduleDescribe == "-" {
                             Text("No Description")
                         } else {
+                            Text("Description")
+                                .foregroundColor(Color.black)
+                            Spacer()
                             Text(scheduleItem.scheduleDescribe)
                         }
-                        Spacer()
                     }
                     .foregroundColor(Color.gray)
                 }
@@ -53,7 +58,7 @@ struct ScheduleItemDetailedView: View {
                             
                             let instructor = Instructor.getInstructor(skiName: instructorName)
                             
-                            InstructorIconView(color: instructor?.color ?? Color.gray, name: instructor?.skiName ?? "None")
+                            InstructorIconView(color: instructor?.color ?? Color.gray, name: instructor?.skiName ?? "None", icon: instructor?.icon ?? "❔")
                             }
                     }
                 }
