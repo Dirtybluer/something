@@ -30,15 +30,15 @@ struct TaskItem: Identifiable {
 }
 
 let lessons: [TaskItem] = [
-    TaskItem(icon: "⛷️", bgColor: Color(red: 247/255, green: 212/255, blue: 72/255), category: "Adult Ski Lessons", title: "Club Beginner", startTime: "9:00", endTime: "11:00", instructors: ["Sammy", "Dave", "Kaleb"], numOfGuests: 60, meetingPoint: "Adult Departure", date: generateDateFromString(dateString: "09-Jan-24")!),
-    TaskItem(icon: "⛷️", bgColor: Color(red: 151/255, green: 247/255, blue: 136/255), category: "Adult Ski Lessons", title: "Club 1", startTime: "9:00", endTime: "11:00", instructors: ["Ben", "Elena", "Charlie"], numOfGuests: 15, meetingPoint: "Adult Departure", date: generateDateFromString(dateString: "09-Jan-24")!),
+    TaskItem(icon: "⛷️", bgColor: Color(red: 247/255, green: 212/255, blue: 72/255), category: "Adult Ski Lessons", title: "Club Beginner", startTime: "9:00", endTime: "11:00", instructors: ["Sammy", "Dave", "Kaleb"], numOfGuests: 56, meetingPoint: "Adult Departure", date: generateDateFromString(dateString: "09-Jan-24")!),
+    TaskItem(icon: "⛷️", bgColor: Color(red: 151/255, green: 247/255, blue: 136/255), category: "Adult Ski Lessons", title: "Club 1", startTime: "9:00", endTime: "11:00", instructors: ["Ben", "Elena", "Charlie"], numOfGuests: 13, meetingPoint: "Adult Departure", date: generateDateFromString(dateString: "09-Jan-24")!),
     TaskItem(icon: "⛷️", bgColor: Color(red: 213/255, green: 215/255, blue: 252/255), category: "Adult Ski Lessons", title: "Club 2", startTime: "13:00", endTime: "15:00", instructors: ["Kaleb"], numOfGuests: 9, meetingPoint: "Adult Departure", date: generateDateFromString(dateString: "09-Jan-24")!),
-    TaskItem(icon: "🏂", bgColor: Color(red: 141/255, green: 191/255, blue: 249/255), category: "Adult Snowboard Lessons", title: "SB Beginner", startTime: "9:00", endTime: "11:00", instructors: ["Dave", "Kaleb"], numOfGuests: 25, meetingPoint: "Adult Departure", date: generateDateFromString(dateString: "09-Jan-24")!),
+    TaskItem(icon: "🏂", bgColor: Color(red: 141/255, green: 191/255, blue: 249/255), category: "Adult Snowboard Lessons", title: "SB Beginner", startTime: "9:00", endTime: "11:00", instructors: ["Dave", "Kaleb"], numOfGuests: 29, meetingPoint: "Adult Departure", date: generateDateFromString(dateString: "09-Jan-24")!),
     
-    TaskItem(icon: "⛷️", bgColor: Color(red: 247/255, green: 212/255, blue: 72/255), category: "Adult Ski Lessons", title: "Club Beginner", startTime: "9:00", endTime: "11:00", instructors: ["Sammy", "Elena", "Charlie"], numOfGuests: 60, meetingPoint: "Adult Departure", date: generateDateFromString(dateString: "10-Jan-24")!),
-    TaskItem(icon: "⛷️", bgColor: Color(red: 151/255, green: 247/255, blue: 136/255), category: "Adult Ski Lessons", title: "Club 1", startTime: "9:00", endTime: "11:00", instructors: ["Ben", "Dave", "Kaleb"], numOfGuests: 15, meetingPoint: "Adult Departure", date: generateDateFromString(dateString: "10-Jan-24")!),
+    TaskItem(icon: "⛷️", bgColor: Color(red: 247/255, green: 212/255, blue: 72/255), category: "Adult Ski Lessons", title: "Club Beginner", startTime: "9:00", endTime: "11:00", instructors: ["Sammy", "Elena", "Charlie"], numOfGuests: 67, meetingPoint: "Adult Departure", date: generateDateFromString(dateString: "10-Jan-24")!),
+    TaskItem(icon: "⛷️", bgColor: Color(red: 151/255, green: 247/255, blue: 136/255), category: "Adult Ski Lessons", title: "Club 1", startTime: "9:00", endTime: "11:00", instructors: ["Ben", "Dave", "Kaleb"], numOfGuests: 17, meetingPoint: "Adult Departure", date: generateDateFromString(dateString: "10-Jan-24")!),
     TaskItem(icon: "⛷️", bgColor: Color(red: 213/255, green: 215/255, blue: 252/255), category: "Adult Ski Lessons", title: "Club 2", startTime: "13:00", endTime: "15:00", instructors: ["Charlie"], numOfGuests: 9, meetingPoint: "Adult Departure", date: generateDateFromString(dateString: "10-Jan-24")!),
-    TaskItem(icon: "🏂", bgColor: Color(red: 141/255, green: 191/255, blue: 249/255), category: "Adult Snowboard Lessons", title: "SB Beginner", startTime: "9:00", endTime: "11:00", instructors: ["Elena", "Charlie"], numOfGuests: 25, meetingPoint: "Adult Departure", date: generateDateFromString(dateString: "10-Jan-24")!),
+    TaskItem(icon: "🏂", bgColor: Color(red: 141/255, green: 191/255, blue: 249/255), category: "Adult Snowboard Lessons", title: "SB Beginner", startTime: "9:00", endTime: "11:00", instructors: ["Elena", "Charlie"], numOfGuests: 23, meetingPoint: "Adult Departure", date: generateDateFromString(dateString: "10-Jan-24")!),
     
     TaskItem(icon: "⛷️", bgColor: Color(red: 247/255, green: 212/255, blue: 72/255), category: "Adult Ski Lessons", title: "Club Beginner", startTime: "9:00", endTime: "11:00", instructors: ["Ben", "Dave", "Charlie"], numOfGuests: 60, meetingPoint: "Adult Departure", date: generateDateFromString(dateString: "11-Jan-24")!),
     TaskItem(icon: "⛷️", bgColor: Color(red: 151/255, green: 247/255, blue: 136/255), category: "Adult Ski Lessons", title: "Club 1", startTime: "9:00", endTime: "11:00", instructors: ["Sammy", "Elena", "Kaleb"], numOfGuests: 15, meetingPoint: "Adult Departure", date: generateDateFromString(dateString: "11-Jan-24")!),
@@ -58,10 +58,10 @@ let duties: [TaskItem] = [
     TaskItem(icon: "✨", bgColor: Color.blue, category: "PM", title: "Pack Down Magic Carpet", startTime: "13:00", endTime: "15:00", instructors: ["Ben", "Elena", "Benjiamin"], numOfGuests: -1, date: generateDateFromString(dateString: "10-Jan-24")!),
     TaskItem(icon: "📱", bgColor:  Color(red: 141/255, green: 191/255, blue: 106/255), category: "PM", title: "Phone Check", startTime: "20:00", endTime: "20:30", instructors: ["Sammy"], numOfGuests: -1, date: generateDateFromString(dateString: "10-Jan-24")!),
     
-    TaskItem(icon: "🪄", bgColor: Color(red: 155/255, green: 233/255, blue: 100/255), category: "AM", title: "Set Up Magic Carpet", startTime: "8:00", endTime: "9:00", instructors: ["Ben", "Dave", "Charlie"], numOfGuests: -1, date: generateDateFromString(dateString: "10-Jan-24")!),
-    TaskItem(icon: "🐼", bgColor: Color(red: 236/255, green: 226/255, blue: 106/255), category: "AM", title: "Set Up Panda Garden", startTime: "8:30", endTime: "9:00", instructors: ["Sammy", "Elena", "Kaleb"], numOfGuests: -1, date: generateDateFromString(dateString: "10-Jan-24")!),
-    TaskItem(icon: "✨", bgColor: Color.blue, category: "PM", title: "Pack Down Magic Carpet", startTime: "13:00", endTime: "15:00", instructors: ["Ben", "Elena", "Benjiamin"], numOfGuests: -1, date: generateDateFromString(dateString: "10-Jan-24")!),
-    TaskItem(icon: "📱", bgColor:  Color(red: 141/255, green: 191/255, blue: 106/255), category: "PM", title: "Phone Check", startTime: "20:00", endTime: "20:30", instructors: ["Ben"], numOfGuests: -1, date: generateDateFromString(dateString: "10-Jan-24")!),
+    TaskItem(icon: "🪄", bgColor: Color(red: 155/255, green: 233/255, blue: 100/255), category: "AM", title: "Set Up Magic Carpet", startTime: "8:00", endTime: "9:00", instructors: ["Ben", "Dave", "Charlie"], numOfGuests: -1, date: generateDateFromString(dateString: "11-Jan-24")!),
+    TaskItem(icon: "🐼", bgColor: Color(red: 236/255, green: 226/255, blue: 106/255), category: "AM", title: "Set Up Panda Garden", startTime: "8:30", endTime: "9:00", instructors: ["Sammy", "Elena", "Kaleb"], numOfGuests: -1, date: generateDateFromString(dateString: "11-Jan-24")!),
+    TaskItem(icon: "✨", bgColor: Color.blue, category: "PM", title: "Pack Down Magic Carpet", startTime: "13:00", endTime: "15:00", instructors: ["Ben", "Elena", "Benjiamin"], numOfGuests: -1, date: generateDateFromString(dateString: "11-Jan-24")!),
+    TaskItem(icon: "📱", bgColor:  Color(red: 141/255, green: 191/255, blue: 106/255), category: "PM", title: "Phone Check", startTime: "20:00", endTime: "20:30", instructors: ["Ben"], numOfGuests: -1, date: generateDateFromString(dateString: "11-Jan-24")!),
 ]
 
 let service: [TaskItem] = [
@@ -171,7 +171,7 @@ struct ScheduleItem: Identifiable {
     }
 }
 
-var exampleSchedule: [ScheduleItem] {
+var currenDateSchdule: [ScheduleItem] {
     var scheduletItemList: [ScheduleItem] = []
     
     for item in lessons {
@@ -201,4 +201,10 @@ var exampleSchedule: [ScheduleItem] {
     }
         
     return sortedScheduleItemList
+}
+
+func getTasksByDate(_ tasks: [TaskItem], selectedDate date: Date) -> [TaskItem] {
+    return tasks.filter { task in
+        return task.date == date
+    }
 }

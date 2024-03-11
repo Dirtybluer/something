@@ -97,6 +97,6 @@ struct ScheduleItemDetailedView: View {
 
 struct ScheduleLessonView_Previews: PreviewProvider {
     static var previews: some View {
-        ScheduleItemDetailedView(viewingInstructorName: "BENJAMIN", scheduleItem: exampleSchedule[0])
+        ScheduleItemDetailedView(viewingInstructorName: "BENJAMIN", scheduleItem: currenDateSchdule[0])
     }
 }

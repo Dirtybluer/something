@@ -10,7 +10,8 @@ import SwiftUI
 struct SchoolTabView: View  {
     private var resortName = "Tomamu"
 
-    @State private var selectedDate: Date = Date()
+    @State private var selectedDate: Date = generateDateFromString(dateString: "09-Jan-24")!
+
     @State private var isDatePickerPresented = false
 
     
@@ -31,11 +32,11 @@ struct SchoolTabView: View  {
                 .padding()
                 
                 if selectedCategory == "Lessons" {
-                    TaskPickerView(tasks: lessons)
+                    TaskPickerView(tasks: getTasksByDate(lessons, selectedDate: selectedDate))
                 } else if selectedCategory == "Duties"{
-                    TaskPickerView(tasks: duties)
+                    TaskPickerView(tasks: getTasksByDate(duties, selectedDate: selectedDate))
                 } else if selectedCategory == "Service"{
-                    TaskPickerView(tasks: service)
+                    TaskPickerView(tasks: getTasksByDate(service, selectedDate: selectedDate))
                 } else if selectedCategory == "Others"{
                     OtherPickerView()
                 }
