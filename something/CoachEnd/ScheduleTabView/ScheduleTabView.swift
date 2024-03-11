@@ -11,37 +11,17 @@ import CoreData
 
 struct ScheduleTabView: View {
     
-    @StateObject private var viewModel: ScheduleTabViewModel
+    @StateObject private var viewModel: ScheduleTabViewModel = ScheduleTabViewModel()
     
-    init(context: NSManagedObjectContext) {
-        _viewModel = StateObject(wrappedValue: ScheduleTabViewModel(context: context))
-    }
 
     var body: some View {
         let viewingInstructorName: String = self.viewModel.viewingIntructorSkiName
         NavigationView {
             VStack(spacing: 20) {
-                
-                HStack {
-                    Button(action: { viewModel.updateDate(by: -1) }) {
-                        Image(systemName: "chevron.left")
-                    }
-                    Text(dateFormatter.string(from: viewModel.selectedDate))
-                        .font(.title3)
-                        .fontWeight(.bold)
-                    Button(action: { viewModel.updateDate(by: 1) }) {
-                        Image(systemName: "chevron.right")
-                    }
-                    
-                    Spacer()
-                    
-//                    NavigationLink(destination: ScheduleCalendarView(date: viewModel.selectedDate, schedule: viewModel.showedScheduleItems)) {
-//                        Image(systemName: "calendar")
-//                            .font(.title3)
-//                    }
-            
-                }
-                .padding(.horizontal, 16)
+                DatePickerView(selectedDate: $viewModel.selectedDate)
+                    .onChange(of: viewModel.selectedDate) { newValue in
+                            viewModel.pullShowedScheduleItems()
+                        }
                 
                 List {
                     ForEach(viewModel.showedScheduleItems) { item in
@@ -57,7 +37,7 @@ struct ScheduleTabView: View {
                 }
                 .listStyle(PlainListStyle())
             }
-            .navigationTitle(viewingInstructorName)
+            .navigationTitle(viewingInstructorName.capitalized)
             .background(Color(UIColor.tertiarySystemGroupedBackground))
         }
         .onAppear(perform: viewModel.pullShowedScheduleItems)
@@ -68,6 +48,6 @@ struct ScheduleTabView: View {
 
 struct ScheduleTabView_Previews: PreviewProvider {
     static var previews: some View {
-        ScheduleTabView(context: CoreDataStack.preview.persistentContainer.viewContext)
+        ScheduleTabView()
     }
 }

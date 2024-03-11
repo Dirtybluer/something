@@ -8,7 +8,7 @@ struct CoachEndView: View {
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            ScheduleTabView(context: viewContext)
+            ScheduleTabView()
                 .tabItem {
                     Image(systemName: "calendar")
                     Text("Schedule")
@@ -37,6 +37,5 @@ struct CoachEndView: View {
 struct CoachEndView_Previews: PreviewProvider {
     static var previews: some View {
         CoachEndView()
-            .environment(\.managedObjectContext, CoreDataStack.preview.persistentContainer.viewContext)
     }
 }

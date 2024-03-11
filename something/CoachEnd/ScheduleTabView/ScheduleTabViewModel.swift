@@ -9,35 +9,20 @@ import Foundation
 import CoreData
 
 class ScheduleTabViewModel: ObservableObject {
-    let context: NSManagedObjectContext
     @Published var selectedDate: Date = generateDateFromString(dateString: "09-Jan-24")!
-//    @Published var selectedDate: Date = Date()
     @Published var showedScheduleItems: [ScheduleItem] = []
-    @Published var viewingIntructorSkiName: String = "Amy"
+    @Published var viewingIntructorSkiName: String = "BENJAMIN"
     
-    init(context: NSManagedObjectContext) {
-        self.context = context
-        self.pullShowedScheduleItems()
-    }
+    
     
     func pullShowedScheduleItems() {
-        let request = NSFetchRequest<ScheduleItem>(entityName: "ScheduleItem")
-
-        let startOfDay = Calendar.current.startOfDay(for: selectedDate)
-        let endOfDay = Calendar.current.date(byAdding: .day, value: 1, to: startOfDay)!
-
-        request.predicate = NSPredicate(format: "(date >= %@) AND (date < %@) AND ANY instructors.skiName == %@", startOfDay as NSDate, endOfDay as NSDate, viewingIntructorSkiName.uppercased())
-//        request.predicate = NSPredicate(format: "(date >= %@) AND (date < %@)", startOfDay as NSDate, endOfDay as NSDate)
-//        request.predicate = NSPredicate(format: "ANY instructors.skiName == %@", viewingIntructorSkiName.uppercased())
-        request.sortDescriptors = [NSSortDescriptor(key: "startTime", ascending: true)]
-
-        do {
-            print("Pulling ScheduleItem Objects")
-            showedScheduleItems = try context.fetch(request)
-            print("Number of Pulled ScheduleItem Objects: \(showedScheduleItems.count)")
-        } catch {
-            print("Failed to fetch ScheduleItem objects:", error.localizedDescription)
+        var pulledScheduleItems: [ScheduleItem] = []
+        for item in exampleSchedule {
+            if (item.date == selectedDate && item.instructors.contains(viewingIntructorSkiName)) {
+                pulledScheduleItems.append(item)
+            }
         }
+        self.showedScheduleItems = pulledScheduleItems
     }
     
     func updateDate(by days: Int) {

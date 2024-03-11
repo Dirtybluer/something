@@ -19,14 +19,13 @@ struct ScheduleRowView: View {
                 .frame(maxWidth: .infinity, alignment: .center)
                 
             HStack {
-                Image(systemName: "sun.min.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 24, height: 24)
-                    .padding(12)
-                    .background(Color.orange.opacity(0.2))
-                    .clipShape(Circle())
-                    .foregroundColor(.orange)
+                ZStack {
+                    Circle()
+                        .fill(item.color)
+                        .frame(width: 60, height: 60)
+                    Text(item.icon)
+                        .font(.system(size: 40))
+                }
                 
                 VStack(alignment: .leading, spacing: 4) {
                     Text(item.scheduleName ?? "Name Not Provided")
@@ -39,11 +38,11 @@ struct ScheduleRowView: View {
                 Spacer()
                 
                 VStack(alignment: .leading) {
-                    if (item.signUpNumber != 0) {
+                    if (item.signUpNum != 0) {
                         HStack {
                             Image(systemName: "person.2.fill")
                                 .font(.caption)
-                            Text("\(item.signUpNumber) Kids")
+                            Text("\(item.signUpNum) Guests")
                                 .font(.caption)
                                 .foregroundColor(.black)
                         }
@@ -52,7 +51,7 @@ struct ScheduleRowView: View {
                     HStack {
                         Image(systemName: "person.crop.rectangle.stack.fill")
                             .font(.caption)
-                        Text("\(item.instructors?.count ?? 0) Coaches")
+                        Text("\(item.instructors.count) Instructors")
                             .font(.caption)
                             .foregroundColor(.black)
                     }
@@ -66,8 +65,8 @@ struct ScheduleRowView: View {
     }
 }
 
-//struct ScheduleRowView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ScheduleRowView(item: exampleLessons[1])
-//    }
-//}
+struct ScheduleRowView_Previews: PreviewProvider {
+    static var previews: some View {
+        ScheduleRowView(item: exampleSchedule[1])
+    }
+}
