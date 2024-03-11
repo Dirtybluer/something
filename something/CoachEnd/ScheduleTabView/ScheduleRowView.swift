@@ -73,6 +73,6 @@ struct ScheduleRowView: View {
 
 struct ScheduleRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ScheduleRowView(item: exampleSchedule[1])
+        ScheduleRowView(item: currenDateSchdule[1])
     }
 }
