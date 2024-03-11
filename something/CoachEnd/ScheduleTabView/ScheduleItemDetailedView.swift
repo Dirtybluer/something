@@ -21,16 +21,22 @@ struct ScheduleItemDetailedView: View {
                     .font(.system(size: 70))
             }
             .padding(.top)
+            
+            GeometryReader { geomerty in
+                
+            }
             Form {
                 Section (header: Text("Summary")) {
-                    HStack{
-                        Text("Guests")
-                        Spacer()
-                        Text(String(scheduleItem.signUpNum))
-                            .foregroundColor(.gray)
+                    if scheduleItem.signUpNum != -1 && scheduleItem.signUpNum != 0 {
+                        HStack{
+                            Text("Guests")
+                            Spacer()
+                            Text(String(scheduleItem.signUpNum))
+                                .foregroundColor(.gray)
+                        }
+                        .fontWeight(/*@START_MENU_TOKEN@*/.heavy/*@END_MENU_TOKEN@*/)
+                        .font(.system(size: 25))
                     }
-                    .fontWeight(/*@START_MENU_TOKEN@*/.heavy/*@END_MENU_TOKEN@*/)
-                    .font(.system(size: 25))
                     HStack{
                         Text("Instructors")
                         Spacer()

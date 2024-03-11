@@ -58,10 +58,10 @@ let duties: [TaskItem] = [
     TaskItem(icon: "✨", bgColor: Color.blue, category: "PM", title: "Pack Down Magic Carpet", startTime: "13:00", endTime: "15:00", instructors: ["Ben", "Elena", "Benjiamin"], numOfGuests: -1, date: generateDateFromString(dateString: "10-Jan-24")!),
     TaskItem(icon: "📱", bgColor:  Color(red: 141/255, green: 191/255, blue: 106/255), category: "PM", title: "Phone Check", startTime: "20:00", endTime: "20:30", instructors: ["Sammy"], numOfGuests: -1, date: generateDateFromString(dateString: "10-Jan-24")!),
     
-    TaskItem(icon: "🪄", bgColor: Color(red: 155/255, green: 233/255, blue: 100/255), category: "AM", title: "Set Up Magic Carpet", startTime: "8:00", endTime: "9:00", instructors: ["Ben", "Dave", "Charlie"], numOfGuests: -1, date: generateDateFromString(dateString: "10-Jan-24")!),
-    TaskItem(icon: "🐼", bgColor: Color(red: 236/255, green: 226/255, blue: 106/255), category: "AM", title: "Set Up Panda Garden", startTime: "8:30", endTime: "9:00", instructors: ["Sammy", "Elena", "Kaleb"], numOfGuests: -1, date: generateDateFromString(dateString: "10-Jan-24")!),
-    TaskItem(icon: "✨", bgColor: Color.blue, category: "PM", title: "Pack Down Magic Carpet", startTime: "13:00", endTime: "15:00", instructors: ["Ben", "Elena", "Benjiamin"], numOfGuests: -1, date: generateDateFromString(dateString: "10-Jan-24")!),
-    TaskItem(icon: "📱", bgColor:  Color(red: 141/255, green: 191/255, blue: 106/255), category: "PM", title: "Phone Check", startTime: "20:00", endTime: "20:30", instructors: ["Ben"], numOfGuests: -1, date: generateDateFromString(dateString: "10-Jan-24")!),
+    TaskItem(icon: "🪄", bgColor: Color(red: 155/255, green: 233/255, blue: 100/255), category: "AM", title: "Set Up Magic Carpet", startTime: "8:00", endTime: "9:00", instructors: ["Ben", "Dave", "Charlie"], numOfGuests: -1, date: generateDateFromString(dateString: "11-Jan-24")!),
+    TaskItem(icon: "🐼", bgColor: Color(red: 236/255, green: 226/255, blue: 106/255), category: "AM", title: "Set Up Panda Garden", startTime: "8:30", endTime: "9:00", instructors: ["Sammy", "Elena", "Kaleb"], numOfGuests: -1, date: generateDateFromString(dateString: "11-Jan-24")!),
+    TaskItem(icon: "✨", bgColor: Color.blue, category: "PM", title: "Pack Down Magic Carpet", startTime: "13:00", endTime: "15:00", instructors: ["Ben", "Elena", "Benjiamin"], numOfGuests: -1, date: generateDateFromString(dateString: "11-Jan-24")!),
+    TaskItem(icon: "📱", bgColor:  Color(red: 141/255, green: 191/255, blue: 106/255), category: "PM", title: "Phone Check", startTime: "20:00", endTime: "20:30", instructors: ["Ben"], numOfGuests: -1, date: generateDateFromString(dateString: "11-Jan-24")!),
 ]
 
 let service: [TaskItem] = [

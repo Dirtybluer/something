@@ -2,13 +2,12 @@ import SwiftUI
 
 struct CoachEndView: View {
     
-    @Environment(\.managedObjectContext) private var viewContext
-    
     @State private var selectedTab = "Schedule"
+    @State private var viewingInstructorName = "Sammy"
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            ScheduleTabView()
+            ScheduleTabView(viewingInstructorName: viewingInstructorName)
                 .tabItem {
                     Image(systemName: "calendar")
                     Text("Schedule")
@@ -23,12 +22,12 @@ struct CoachEndView: View {
                 .tag("School")
             
         // todo: 替换成实际的个人视图
-            Text("Profile")
+            ProfileTabView(viewingInstructorName: $viewingInstructorName)
                 .tabItem {
                     Image(systemName: "person")
                     Text("Profile")
                 }
-                .tag("Profile")
+                .tag("School")
         }
     }
 }
