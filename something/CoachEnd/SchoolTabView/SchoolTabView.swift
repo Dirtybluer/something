@@ -20,7 +20,6 @@ struct SchoolTabView: View  {
     var body: some View {
         NavigationView {
             VStack {
-                //
                 DatePickerView(selectedDate: $selectedDate)
                 
                 Picker("", selection: $selectedCategory) {
@@ -37,10 +36,12 @@ struct SchoolTabView: View  {
                     TaskPickerView(tasks: duties)
                 } else if selectedCategory == "Service"{
                     TaskPickerView(tasks: service)
+                } else if selectedCategory == "Others"{
+                    OtherPickerView()
                 }
             }
             .navigationTitle(resortName)
-            .background(Color(UIColor.systemGroupedBackground))
+            .background(Color(UIColor.tertiarySystemGroupedBackground))
         }
     }
     

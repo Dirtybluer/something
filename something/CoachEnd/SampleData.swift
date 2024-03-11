@@ -50,6 +50,19 @@ let service: [TaskItem] = [
     TaskItem(icon: "🤵‍♂️", bgColor: Color(red: 241/255, green: 159/255, blue: 150/255), category: "Reception", title: "TOM11 Arrival Help", startTime: "20:00", endTime: "20:30", instructors: ["Sammy", "Dave", "Kaleb"], numOfGuests: -1, date: generateDateFromString(dateString: "09-Jan-24")!),
 ]
 
+struct AssistantItem: Identifiable {
+    var id = UUID()
+    var name: String
+    var department: String
+    var bgColor: Color
+}
+
+let assistantOnDuty: [AssistantItem] = [
+    AssistantItem(name: "Jason Ohh", department: "Adult Departure", bgColor: Color(red: 247/255, green: 212/255, blue: 72/255)),
+    AssistantItem(name: "Thomas Platt", department: "Small Kids Departure", bgColor: Color(red: 241/255, green: 155/255, blue: 144/255)),
+    AssistantItem(name: "Tets Dan", department: "Big Kids Departure", bgColor: Color(red: 164/255, green: 246/255, blue: 106/255)),
+    AssistantItem(name: "Moe H", department: "Ski Office Administration", bgColor: Color(red: 242/255, green: 154/255, blue: 199/255)),
+]
 
 struct ScheduleItem: Identifiable {
     var scheduleName: String

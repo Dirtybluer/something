@@ -19,13 +19,13 @@ struct TaskPickerView: View{
         List {
             // Use a ForEach to iterate over categories
             ForEach(categorizedLessons.keys.sorted(), id: \.self) { category in
-                Section(header: Text(category).foregroundColor(.primary).font(.subheadline).fontWeight(.bold)) {
+                Section(header: Text(category).foregroundColor(.primary).font(.headline).fontWeight(.bold)) {
                     // Layer another ForEach to iterate over lessons in this category
                     ForEach(categorizedLessons[category]!, id: \.id) { lesson in
                         TaskRowView(item: lesson)
                     }
                 }
-                .listRowBackground(Color.gray.opacity(0.2))
+                .listRowBackground(Color(UIColor.secondarySystemGroupedBackground))
             }
         }
     }
